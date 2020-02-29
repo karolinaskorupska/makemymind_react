@@ -13,7 +13,7 @@ const Index=()=>{
                 <Welcome/>
                 <Proces/>
             </div>
-            <Opinie/>
+            <Opinie />
             <div className="container">
                 <Calendar/>
             </div>

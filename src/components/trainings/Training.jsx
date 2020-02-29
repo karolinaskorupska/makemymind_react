@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 //obrazy:
 import WatchImg from '../../assets/trainings/np_time_2496474_FFD26E.svg';
 import PlaceImg from '../../assets/trainings/np_place_3090813_FFD26E.svg';
 
-
-const Training=()=>{
-
+const Training =()=>{
+    const [trainingsList, setTrainingsList] = useState([]);
+    useEffect(()=>{
+        fetch('http://localhost:4000/trainings')
+        .then((response)=>{
+            return response.json();
+        })
+        .then((trainings)=>{
+            setTrainingsList(trainings);
+        });
+    },[]);
+    
+    console.log(trainingsList);
     return(
+        
         <div className="small-box training">
              {/* //info o obrazie będzie zbierane z pliku data- czy tu też trzeba go importować? w funkcji? */}
                     <div className="photo-box"></div>
@@ -45,5 +56,8 @@ const Training=()=>{
                 </div>
     )
 }
+
+
+
 
 export default Training;

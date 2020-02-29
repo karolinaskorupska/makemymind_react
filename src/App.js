@@ -1,17 +1,17 @@
 import React from 'react';
 
 //style:
-import "../src/scss/main.scss";
+import "./scss/main.scss";
 
 
 //komponenty stałe:
-import Header from '../src/components/Header';
-import Footer from '../src/components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 //podstrony:
-import Index from '../src/pages/Index';
-import Trainers from '../src/pages/Trainers';
-import Trainings from '../src/pages/Trainings';
-import Contact from '../src/pages/Contact';
+import Index from './pages/Index';
+import Trainers from './pages/Trainers';
+import Trainings from './pages/Trainings';
+import Contact from './pages/Contact';
 
 //zmienne:
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -19,21 +19,17 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Header />
-    
       <BrowserRouter>
-        <Switch>
-
-          {/* dlaczego pierwsze uniwerslane / nie działa? */}
-          <Route exact path="/" component={Index} />
-          <Route exact path="/index.html" component={Index} />
-          <Route exact path="/trainers.html" component={Trainers} />
-          <Route exact path="/trainings.html" component={Trainings} />
-          <Route exact path="/contact.html" component={Contact} />   
-        </Switch>
-      </BrowserRouter>
-
-      <Footer />
+        <Header />
+          <Switch>
+            <Route exact path="/" component={Index} />
+            <Route exact path="/index" component={Index} />
+            <Route exact path="/trainers" component={Trainers} />
+            <Route exact path="/trainings" component={Trainings} />
+            <Route exact path="/contact" component={Contact} />   
+          </Switch>
+        <Footer />
+      </BrowserRouter> 
     </div>
   );
 }

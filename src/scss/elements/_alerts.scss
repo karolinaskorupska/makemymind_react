@@ -1,0 +1,35 @@
+div.alert{
+    width: 170px;
+    height: 30px;
+    border-radius:17.5px;
+    font-size: 11px;
+    padding: 7px 7px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: center;
+
+    &.green{
+        background-color: $greenAlertBackground;
+        box-shadow: $greenAlertShadow;
+        color: #66BC6B;
+
+    }
+
+    &.red{
+        background: $redAlertBackground;
+        box-shadow:$redAlertShadow;
+        color:$redAlertColor;
+
+
+    }
+
+    &.blue{
+        background-color: $blueAlertBackground;
+        box-shadow: $blueAlertShadow;
+        color: #74ADF0;
+    
+
+    }
+
+    
+}

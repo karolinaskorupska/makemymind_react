@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 // formularz kontrolowany: imię i nazwisko nie może być puste, email musi zawierać @, wiadomość też nie może być pusta
+
 class Form extends Component{
 
     state={
@@ -11,15 +11,13 @@ class Form extends Component{
         errorEmail:'',
         errorMessage:'',
         isValidated:false,
+        formDataList:[],
     }
-
-
     handleChange=(event)=>{
         this.setState({
           [event.target.name]: event.target.value
         });
       }
-
     validate =()=>{
 
         const {name, email, message}=this.state;
@@ -27,27 +25,26 @@ class Form extends Component{
 
         if(name === ''){
             isValid=false;
-            this.setState({ errorName:"Pole IMIĘ I NAZWISKO musi być uzupełnione"})
+            this.setState({ errorName:"Uzupełnij dane"})
         }else{
             this.setState({errorName:''});
         }
 
         if(message === ''){
             isValid=false;
-            this.setState({ errorMessage:"Pole WPISZ WIADOMOŚĆ musi być uzupełnione"})
+            this.setState({ errorMessage:"Uzupełnij dane"})
         }else{
             this.setState({errorMessage:''});
         }
 
         if(email === '' || email.indexOf("@") === -1){
             isValid=false;
-            this.setState({ errorEmail:"Pole E-MAIL musi być uzupełnione i zawierać znak @"})
+            this.setState({ errorEmail:"Uzupełnij dane o @"})
         }else{
             this.setState({errorEmail:''});
         }
         return isValid;
     }
-
     handleSubmit=(event)=>{
         event.preventDefault();
 
@@ -63,9 +60,8 @@ class Form extends Component{
         }
       
       }
-
     render(){
-        const{name, email, message, errorName,errorMessage,errorEmail,isValidated}=this.state;
+        const{errorName,errorMessage,errorEmail,isValidated}=this.state;
         
 
         return(
@@ -96,10 +92,10 @@ class Form extends Component{
                 type="submit" value="Wyślij" 
                 onClick={this.handleSubmit}>Wyślij wiadomość</button>
                
-                {isValidated && <span className="alert green ok">Dziękujemy za wiadomość!</span>}
-                {errorName && <span className =" alert red error">{errorName}</span>}
-                {errorEmail && <span className ="alert red error">{errorEmail}</span>}
-                {errorMessage && <span className ="alert red error">{errorMessage}</span>}
+                {isValidated && <div className="alert green ok">Dziękujemy!</div>}
+                {errorName && <div className =" alert red error">{errorName}</div>}
+                {errorEmail && <div className ="alert red error">{errorEmail}</div>}
+                {errorMessage && <div className ="alert red error">{errorMessage}</div>}
 
             </>
         ) 
