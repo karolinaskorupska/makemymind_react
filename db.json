@@ -16,33 +16,33 @@
         "adress": "ul.Towarowa 35" 
     },
     {
-        "name":"Treningi dla liderów",
-        "price": "0zł",
+        "name":"Treningi dla laików",
+        "price": "30zł",
         "photo": "../assets/DSC0166.png",
         "description":[
             "– przećwiczysz różne techniki efektywnego zarządzania zespołami",
             "– dowiesz się jak zbudować i podtrzymać wizerunek skutecznego lidera ",
-            "– pierwsze treningi już we Wrześniu"
+            "– pierwsze treningi już w Październiku"
         ],
   
-        "howManyTrainings":"12 treningów/",
-        "howManyHoursEvery":"2 godziny każdy",
-        "city":"Poznań",
+        "howManyTrainings":"122 treningów/",
+        "howManyHoursEvery":"23 godziny każdy",
+        "city":"Wrocław",
         "adress": "ul.Towarowa 35" 
     },
     {
-        "name":"Treningi dla liderów",
-        "price": "0zł",
+        "name":"Treningi dla pracowników",
+        "price": "10zł",
         "photo": "../assets/DSC0166.png",
         "description":[
             "– przećwiczysz różne techniki efektywnego zarządzania zespołami",
             "– dowiesz się jak zbudować i podtrzymać wizerunek skutecznego lidera ",
-            "– pierwsze treningi już we Wrześniu"
+            "– pierwsze treningi już w Listopadzie"
         ],
   
-        "howManyTrainings":"12 treningów/",
-        "howManyHoursEvery":"2 godziny każdy",
-        "city":"Poznań",
+        "howManyTrainings":"5 treningów/",
+        "howManyHoursEvery":"1 godziny każdy",
+        "city":"Śrem",
         "adress": "ul.Towarowa 35" 
     }    
   ],

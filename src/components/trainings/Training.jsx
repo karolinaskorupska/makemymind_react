@@ -14,39 +14,35 @@ const Training =()=>{
             setTrainingsList(trainings);
         });
     },[]);
-    
-    console.log(trainingsList);
+
     return(
-        
-        <div className="small-box training">
-             {/* //info o obrazie będzie zbierane z pliku data- czy tu też trzeba go importować? w funkcji? */}
-                    <div className="photo-box"></div>
-                    <div className="text-box">
-                        <h4>Treningi dla liderów</h4>
-                        <span>0ZŁ!</span>
-                        <div className="p-box">
-                            {/* w tym miejscu będę mapować paragrafy z description */}
-                            <p> – przećwiczysz różne techniki efektywnego zarządzania zespołami</p>
-                            <p> – dowiesz się jak zbudować i podtrzymać wizerunek skutecznego lidera </p>  
-                            <p> – pierwsze treningi już we Wrześniu</p>
-                        </div>
-                        <div className="icon-box">
-                            <div className="watch">
-                                 
-                                <img src={WatchImg} alt="watch"/>
-                                <div className="txt">
-                                    12 treningów/
-                                    <br></br>
-                                    2 godziny każdy
-                                </div>
+        <>
+            {trainingsList.map((training)=>{
+                return (
+                    <div className="small-box training">
+                        <div className="photo-box" src={training.photo}></div>
+                        <div className="text-box">
+                            <h4>{training.name}</h4>
+                            <span>{training.price}</span>
+                            <div className="p-box">
+                                {training.description.map((desc, id)=><p key={id}>{desc}</p>)}
                             </div>
-                            <div className="location">
+                            <div className="icon-box">
+                                <div className="watch">
+                                    <img src={WatchImg} alt="watch"/>
+                                    <div className="txt">
+                                        {training.howManyTrainings}
+                                        <br></br>
+                                        {training.howManyHoursEvery}
+                                    </div>
+                                </div>
+                                <div className="location">
                                 
                                 <img src={PlaceImg} alt="location"/>
                                 <div className="txt">
-                                    Poznań,
+                                    {training.city}
                                     <br></br>
-                                    ul.Towarowa 35
+                                    {training.adress}
                                 </div>
                             </div>
                         </div>   
@@ -54,6 +50,9 @@ const Training =()=>{
                         <a href="dowiedz-sie-wiecej">Dowiedz się więcej</a>
                     </div>
                 </div>
+                );
+            })}
+        </>
     )
 }
 

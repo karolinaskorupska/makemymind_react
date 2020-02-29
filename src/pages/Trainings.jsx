@@ -10,7 +10,6 @@ const Trainings=()=>{
             <div className="container trainings">
                 <h2>Treningi z kompetencji miękkich</h2>
                     <div className="big-box trainings">
-                        {/* on też mus być zmapowany jak w trainers */}
                         <Training />
                     </div>
             </div>

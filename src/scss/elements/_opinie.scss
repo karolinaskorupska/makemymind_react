@@ -110,8 +110,9 @@ section.opinie {
                                 display: block;
                                 display: flex;
                                 flex-direction: row;
-                                justify-content: center;
+                                justify-content: space-around;
                                 align-items: center;
+                                width:100%;
                             }
                             .carousel-txt-container {
                                 width: 560px;

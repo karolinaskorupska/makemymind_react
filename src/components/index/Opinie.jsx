@@ -32,6 +32,9 @@ const ChevronStyle = {
 
 //zmienna przykładowa-będzie tu tablica obiektów:
 const slides=[1,2,3];
+
+
+
 class Opinie extends Component{
     state={
         activeSlide:2,
