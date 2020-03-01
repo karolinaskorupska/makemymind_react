@@ -15,12 +15,14 @@ class Form extends Component{
     }
 
     createNewContact=()=>{
-        const newContact={
-            name: "Karolina",
-            email:"hhh@hh.pl",
-            message:"blabla"
-        }
+        const {name, email, message}= this.state;
 
+        const newContact = {
+            name :name,
+            email:email,
+            message:message
+        }
+        
         fetch('http://localhost:4000/contactForm',{
             method: 'POST',
             headers:{
@@ -83,7 +85,7 @@ class Form extends Component{
       
       }
     render(){
-        const{errorName,errorMessage,errorEmail,isValidated}=this.state;
+        const{name, email, message, errorName,errorMessage,errorEmail,isValidated}=this.state;
         
 
         return(
@@ -92,18 +94,31 @@ class Form extends Component{
                         <div className="personal-data">
                             <div className="name">
                                 <label >Wpisz imię i nazwisko </label>
-                                <input type="text" name="name" onChange={this.handleChange} placeholder="np. Anna Nowak"/>
+                                <input 
+                                type="text" 
+                                name="name" 
+                                value={name}
+                                onChange={this.handleChange} 
+                                placeholder="np. Anna Nowak"/>
                             </div>  
                             <div className="email">
                                 <label> Wpisz adres e-mail </label>
-                                <input type="email" name="email" onChange={this.handleChange}placeholder="np. anna.nowak@gmail.com" />    
+                                <input 
+                                value={email}
+                                type="email" 
+                                name="email" 
+                                onChange={this.handleChange}
+                                placeholder="np. anna.nowak@gmail.com" />    
                             </div>
                         </div>
                         <div className="textarea">
                             <label>Wpisz treść wiadomości </label>
-                                <textarea wrap="on" cols="60" rows="10" placeholder="np. Chcę się umówić na zajęcia!"
+                                <textarea 
+                                wrap="on" 
+                                cols="60" rows="10" 
+                                placeholder="np. Chcę się umówić na zajęcia!"
                                 name="message"
-                                
+                                value={message}
                                 onChange={this.handleChange}></textarea>
                             
                         </div>
