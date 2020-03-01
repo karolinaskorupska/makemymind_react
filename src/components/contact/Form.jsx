@@ -11,7 +11,6 @@ class Form extends Component{
         errorEmail:'',
         errorMessage:'',
         isValidated:false,
-        // formDataList:[],
     }
 
     createNewContact=()=>{
@@ -78,10 +77,12 @@ class Form extends Component{
                 isValidated: true,
                 name: '',
                 email: '',
-                text: '' 
-            })
+                text: '' ,
+                message:''
+            });
+            // console.log("zwalidowano");
+            this.createNewContact();
         }
-        this.createNewContact();
       
       }
     render(){

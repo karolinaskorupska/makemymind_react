@@ -1,11 +1,5 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-//obrazy
-import Logo from '../assets/Header_logo_MMM.svg';
-import LinkedInDark from '../assets/Linked_Icon_dark.svg';
-import InstagramDark from '../assets/Instagram_Icon_dark.svg';
-import FacebookDark from '../assets/Facebook_Icon_dark.svg';
-import TwitterDark from '../assets/Twitter_Icon_dark.svg';
 import { Component } from 'react';
 
 
@@ -30,7 +24,7 @@ class Header extends Component{
             className={hamburgerIsOpen ? "hamburger-menu-on" : ""}
             >
                 <div className="logo">
-                    <img src={Logo} alt="logo"></img>
+                    <img src="assets/Header_logo_MMM.svg" alt="logo"></img>
                     <button className="cross visible" onClick={this.handleHamburgerMenu}>
                         <span></span>
                         <span></span>
@@ -52,10 +46,10 @@ class Header extends Component{
                     <button className="sprawdz-trening">sprawdz trening!</button>
                     <button className="umow-sie">umów się za darmo</button>
                     <div className="hamburger-menu-icons">
-                        <Link to="https://www.linkedin.com/company/make-my-mind/" target="_blank"><img src={LinkedInDark} alt="LinkedIn"></img></Link>
-                        <Link to="https://www.facebook.com/makemymindpl/" target="_blank"><img src={FacebookDark} alt="Facebook"></img></Link>
-                        <Link to="#"><img src={TwitterDark} alt="Twitter" target="_blank"></img></Link>
-                        <Link to="https://www.instagram.com/make_my_mind/" target="_blank"><img src={InstagramDark} alt="Instagram"></img></Link>
+                        <Link to="https://www.linkedin.com/company/make-my-mind/" target="_blank"><img src="assets/Linked_Icon_dark.svg" alt="LinkedIn"></img></Link>
+                        <Link to="https://www.facebook.com/makemymindpl/" target="_blank"><img src="assets/Facebook_Icon_dark.svg" alt="Facebook"></img></Link>
+                        <Link to="#"><img src="assetss/Twitter_Icon_dark.svg" alt="Twitter" target="_blank"></img></Link>
+                        <Link to="https://www.instagram.com/make_my_mind/" target="_blank"><img src="assets/Instagram_Icon_dark.svg" alt="Instagram"></img></Link>
                     </div>
                 </div>
                 

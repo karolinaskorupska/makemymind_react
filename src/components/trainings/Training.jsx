@@ -1,7 +1,4 @@
 import React, { useState, useEffect} from 'react';
-//obrazy:
-import WatchImg from '../../assets/trainings/np_time_2496474_FFD26E.svg';
-import PlaceImg from '../../assets/trainings/np_place_3090813_FFD26E.svg';
 
 const Training =()=>{
     const [trainingsList, setTrainingsList] = useState([]);
@@ -20,7 +17,7 @@ const Training =()=>{
             {trainingsList.map((training)=>{
                 return (
                     <div className="small-box training">
-                        <div className="photo-box" src={training.photo}></div>
+                        <div className="photo-box" ><img src={training.photo}></img></div>
                         <div className="text-box">
                             <h4>{training.name}</h4>
                             <span>{training.price}</span>
@@ -29,7 +26,7 @@ const Training =()=>{
                             </div>
                             <div className="icon-box">
                                 <div className="watch">
-                                    <img src={WatchImg} alt="watch"/>
+                                    <img src="assets/trainings/np_time_2496474_FFD26E.svg" alt="watch"/>
                                     <div className="txt">
                                         {training.howManyTrainings}
                                         <br></br>
@@ -38,7 +35,7 @@ const Training =()=>{
                                 </div>
                                 <div className="location">
                                 
-                                <img src={PlaceImg} alt="location"/>
+                                <img src="assets/trainings/np_place_3090813_FFD26E.svg" alt="location"/>
                                 <div className="txt">
                                     {training.city}
                                     <br></br>

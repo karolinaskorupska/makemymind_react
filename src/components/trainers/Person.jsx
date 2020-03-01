@@ -17,7 +17,7 @@ class Person extends Component{
         return(
             <div className="person">
                 <div className="introduce">
-                    <div className="image" ><img src={photoPath}></img></div>
+                    <div className="image" ><img src={photoPath} alt="trainer photo"></img></div>
                     <div className="name">{name}<br></br> {surname}</div>
                 </div>
                 <div className="description">

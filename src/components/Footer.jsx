@@ -1,12 +1,5 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-//obrazy
-import LinkedIn from '../assets/Linked_Icon.svg';
-import Instagram from '../assets/Instagram_Icon.svg';
-import Facebook from '../assets/Facebook_Icon.svg';
-import Twitter from '../assets/Twitter_Icon.svg';
-import PhoneIcon from '../assets/np_phone_2828705_9B9B9B.svg';
-import EmailIcon from '../assets/np_mail_933334_9B9B9B.svg';
 
 
 const Footer = () => {
@@ -16,13 +9,13 @@ const Footer = () => {
             
             <div className="left">
                 Masz pytania?<br></br> Skontaktuj się z naszym konsultantem!
-                <div className="tel"><img src={PhoneIcon} alt="phoneIcon"></img>+48 000 000 000</div>
-                <div className="mail"><img src={EmailIcon} alt="EmailIcon"></img>kontakt@makemymind.pl</div>
+                <div className="tel"><img src="assets/np_phone_2828705_9B9B9B.svg" alt="phoneIcon"></img>+48 000 000 000</div>
+                <div className="mail"><img src="assets/np_mail_933334_9B9B9B.svg" alt="EmailIcon"></img>kontakt@makemymind.pl</div>
                 <div className="icons">
-                    <Link to="https://www.linkedin.com/company/make-my-mind/" target="_blank"><img src={LinkedIn} alt="linkedin"></img></Link>
-                    <Link to="https://www.facebook.com/makemymindpl/" target="_blank"><img src={Facebook} alt="Facebook"></img></Link>
-                    <Link to="#"><img src={Twitter} alt="Twitter" target="_blank"></img></Link>
-                    <Link to="https://www.instagram.com/make_my_mind/" target="_blank"><img src={Instagram} alt="Instagram"></img></Link>
+                    <Link to="https://www.linkedin.com/company/make-my-mind/" target="_blank"><img src="assets/Linked_Icon.svg" alt="linkedin"></img></Link>
+                    <Link to="https://www.facebook.com/makemymindpl/" target="_blank"><img src="assets/Facebook_Icon.svg" alt="Facebook"></img></Link>
+                    <Link to="#"><img src="assets/Twitter_Icon.svg" alt="Twitter" target="_blank"></img></Link>
+                    <Link to="https://www.instagram.com/make_my_mind/" target="_blank"><img src="assets/Instagram_Icon.svg" alt="Instagram"></img></Link>
                 </div>
             </div>    
             <div className="middle">

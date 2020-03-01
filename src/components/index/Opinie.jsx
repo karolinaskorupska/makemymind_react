@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Testimonial from '../../assets/illustration_testimonial.svg';
-import ReactDOM from "react-dom";
 //fontawesome:
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -33,12 +30,37 @@ const ChevronStyle = {
 //zmienna przykładowa-będzie tu tablica obiektów:
 const slides=[1,2,3];
 
-
+// const [trainingsList, setTrainingsList] = useState([]);
+// useEffect(()=>{
+//     fetch('http://localhost:4000/trainings')
+//     .then((response)=>{
+//         return response.json();
+//     })
+//     .then((trainings)=>{
+//         setTrainingsList(trainings);
+//     });
+// },[]);
 
 class Opinie extends Component{
     state={
-        activeSlide:2,
+        activeSlide:1,
+        opinionsList:[],
+        
     }
+    componentDidMount(){
+        fetch('http://localhost:4000/opinions')
+        .then((response)=>{
+            return response.json();
+        })
+        .then((opinion)=>{
+            this.setState({
+                opinionsList:opinion
+            });
+        }).catch(err => {
+            console.error(err);
+          });
+    }
+
     setPrevSlide=()=>{
         
         this.setState((state) => {
@@ -60,6 +82,7 @@ class Opinie extends Component{
     }
 
     render(){
+        console.log(this.state.opinionsList)
         return(
             <section className="opinie">
                     <div className="container">
@@ -78,7 +101,7 @@ class Opinie extends Component{
                                             {slides.map((n)=>{
                                                 return (
                                                     <div key={n} className={`small-container ${this.state.activeSlide===n ? "visible" : "" }`}>
-                                                        <img className="opinieImg" src={Testimonial} alt="obrazek opinii"
+                                                        <img className="opinieImg" src="assets/illustration_testimonial.svg" alt="obrazek opinii"
                                                         style={{width: "193px", height: "143px"}}></img>
                                                         <div className="carousel-txt-container">
                                                             <h4>"Najlepsze treningi na jakich byłem!"</h4>

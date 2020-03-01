@@ -3,7 +3,7 @@
     {
       "name": "Treningi dla liderów",
       "price": "0zł",
-      "photo": "../assets/DSC0166.png",
+      "photo": "public/assets/trainings/DSC0166.png",
       "description": [
         "– przećwiczysz różne techniki efektywnego zarządzania zespołami",
         "– dowiesz się jak zbudować i podtrzymać wizerunek skutecznego lidera ",
@@ -17,7 +17,7 @@
     {
       "name": "Treningi dla laików",
       "price": "30zł",
-      "photo": "../assets/DSC0166.png",
+      "photo": "public/assets/trainings/DSC0166.png",
       "description": [
         "– przećwiczysz różne techniki efektywnego zarządzania zespołami",
         "– dowiesz się jak zbudować i podtrzymać wizerunek skutecznego lidera ",
@@ -31,7 +31,7 @@
     {
       "name": "Treningi dla pracowników",
       "price": "10zł",
-      "photo": "../assets/DSC0166.png",
+      "photo": "public/assets/trainings/DSC0166.png",
       "description": [
         "– przećwiczysz różne techniki efektywnego zarządzania zespołami",
         "– dowiesz się jak zbudować i podtrzymać wizerunek skutecznego lidera ",
@@ -58,7 +58,7 @@
       "name": "Kinga",
       "surname": "Michalak",
       "photoPath": "../assets/photo_kinga.png",
-      "shortDescription":"Prezes firmy Make My Mind sp. z o.o. Specjalizuje się w obszarze strategii rekrutacyjnych i Employer Brandingowych. Od siedmiu lat buduje zespoły IT. Ostatnie cztery lata poświęciła rozwijaniu agencji rekrutacyjnej, starając się odświeżać innowacyjnymi rozwiązaniami obszar Human Resources polskich i zagranicznych organizacji.",
+      "shortDescription": "Prezes firmy Make My Mind sp. z o.o. Specjalizuje się w obszarze strategii rekrutacyjnych i Employer Brandingowych. Od siedmiu lat buduje zespoły IT. Ostatnie cztery lata poświęciła rozwijaniu agencji rekrutacyjnej, starając się odświeżać innowacyjnymi rozwiązaniami obszar Human Resources polskich i zagranicznych organizacji.",
       "description": [
         "Odpowiedzialna za rozwój takich projektów jak Escape Centre - audyty kompetencyjne dla pracowników poprzez rozwiązywanie zagadek w Escape roomach czy szkoleń w Virtual Reality. Aktualnie równie mocno zaangażowana w rozwijanie start-upu i zarządzanie projektami badawczo - rozwojowymi z obszaru dopasowania pracownika do kultury organizacyjnej pod kątem jego predyspozycji i preferencji. ",
         "Trenerka kompetencji miękkich z przepracowanymi ponad 800 godzinami na sali szkoleniowej. Efektem doświadczenia edukacyjnego jest jej nowy projekt benefitu szkoleniowego dla pracowników w formie karnetu “Fitness dla umysłu”. Jej domeną jest kreacja połączona z wiedzą psychologiczną i analitycznoartystycznym zacięciem."
@@ -68,7 +68,7 @@
       "name": "Michał",
       "surname": "Łęgowski",
       "photoPath": "../assets/photo_michal.png",
-      "shortDescription":"Jest akredytowanym coachem ACC (International Coaching Federation), trenerem umiejętności społecznych i praktykiem biznesowym. Ukończył Uniwersytet Ekonomiczny w Poznaniu o profilu absolwenta trenera biznesu, posiadam certyfikację VCC (Vocational Competence Certificate) i NSB (Neuro-lingustic programming in Business).",
+      "shortDescription": "Jest akredytowanym coachem ACC (International Coaching Federation), trenerem umiejętności społecznych i praktykiem biznesowym. Ukończył Uniwersytet Ekonomiczny w Poznaniu o profilu absolwenta trenera biznesu, posiadam certyfikację VCC (Vocational Competence Certificate) i NSB (Neuro-lingustic programming in Business).",
       "description": [
         "Jego główne zajęcie to pełnienie funkcji prezesa zarządu spółki – firmy szkoleniowej TrainBrain Polska Sp.z o.o. czyli prowadzenie szkoleń. Ponadto jest mówcą zaawansowanym (certyfikat ACS, ALB)Tostmasters International – międzynarodowej organizacji zajmującej się profesjonalnymi przemówieniami publicznymi. Pełni rolę mentora w AIP inkubatory.pl, gdzie pomaga rozwijać się start-upom i ściśle współpracuje z Business Link, prowadząc szkolenia w formule Business Training.",
         "Jako przedsiębiorca i biznesmen, wie jak pomagać ludziom w rozwoju osobistym i biznesie. To jego największa pasja od blisko 9 lat. Prywatnie jest ratownikiem WOPR, psychologiem oraz entuzjastą myrmekologii i sportów ekstremalnych."
@@ -83,34 +83,39 @@
       "message": "blabla"
     },
     {
-      "name": "Karolina",
-      "email": "hhh@hh.pl",
-      "message": "blabla",
-      "id": "5jwclAo"
+      "name": "f",
+      "email": "f",
+      "message": "",
+      "id": "SjjaSyP"
     },
     {
-      "name": "Karolina",
-      "email": "hhh@hh.pl",
-      "message": "blabla",
-      "id": "i2AdRAu"
+      "name": "sd",
+      "email": "@",
+      "message": "sd",
+      "id": "9L2In6m"
+    }
+  ],
+  "opinions":[
+    {
+      "author":"Jan Kowalski",
+      "position": "CEO Make My Mind",
+      "title":"Najlepsze treningi, na których byłem",
+      "opinionText":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!",
+      "photoPath":"../assets/illustration_testimonial.svg"
     },
     {
-      "name": "Karolina",
-      "email": "hhh@hh.pl",
-      "message": "blabla",
-      "id": "2Jr9qV2"
+      "author":"Jan Kwalczyl",
+      "position": "CEO Make My Mind",
+      "title":"Wiele rzeczy nie wiedziałem",
+      "opinionText":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!",
+      "photoPath":"../assets/illustration_testimonial.svg"
     },
     {
-      "name": "Karolina",
-      "email": "hhh@hh.pl",
-      "message": "blabla",
-      "id": "hDKCJt5"
-    },
-    {
-      "name": "zx",
-      "email": "@df",
-      "message": "df",
-      "id": "zmR5ToI"
+      "author":"Marian",
+      "position": "CEO Make My Mind",
+      "title":"Było super!",
+      "opinionText":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!",
+      "photoPath":"../assets/illustration_testimonial.svg"
     }
   ]
 }
