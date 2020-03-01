@@ -3,7 +3,7 @@
     {
       "name": "Treningi dla liderów",
       "price": "0zł",
-      "photo": "public/assets/trainings/DSC0166.png",
+      "photoPath": "assets/trainings/DSC0166.png",
       "description": [
         "– przećwiczysz różne techniki efektywnego zarządzania zespołami",
         "– dowiesz się jak zbudować i podtrzymać wizerunek skutecznego lidera ",
@@ -17,7 +17,7 @@
     {
       "name": "Treningi dla laików",
       "price": "30zł",
-      "photo": "public/assets/trainings/DSC0166.png",
+      "photoPath": "assets/trainings/DSC0166.png",
       "description": [
         "– przećwiczysz różne techniki efektywnego zarządzania zespołami",
         "– dowiesz się jak zbudować i podtrzymać wizerunek skutecznego lidera ",
@@ -31,7 +31,7 @@
     {
       "name": "Treningi dla pracowników",
       "price": "10zł",
-      "photo": "public/assets/trainings/DSC0166.png",
+      "photoPath": "assets/trainings/DSC0166.png",
       "description": [
         "– przećwiczysz różne techniki efektywnego zarządzania zespołami",
         "– dowiesz się jak zbudować i podtrzymać wizerunek skutecznego lidera ",
@@ -105,6 +105,12 @@
       "email": "@",
       "message": "sdf",
       "id": "S3XQQvD"
+    },
+    {
+      "name": "zxz",
+      "email": "@",
+      "message": "df",
+      "id": "ryrL1cY"
     }
   ],
   "opinions": [

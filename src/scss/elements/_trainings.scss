@@ -51,8 +51,11 @@ main .trainings {
                 // background-image: url("../../assets/trainings/DSC0166.png");
                 background-color: gray;
                 background-size: cover;
+                z-index: 0;
             }
             .text-box{
+                z-index: 1;
+                background-color: $backgroundColor;
                 height: 380px;
                 display: flex;
                 flex-direction: column;

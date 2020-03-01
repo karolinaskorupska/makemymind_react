@@ -11,13 +11,15 @@ const Training =()=>{
             setTrainingsList(trainings);
         });
     },[]);
+    
 
     return(
         <>
             {trainingsList.map((training)=>{
+                console.log(training.photoPath)
                 return (
                     <div className="small-box training">
-                        <div className="photo-box" ><img src={training.photo}></img></div>
+                        <div className="photo-box" ><img src={training.photoPath}></img></div>
                         <div className="text-box">
                             <h4>{training.name}</h4>
                             <span>{training.price}</span>

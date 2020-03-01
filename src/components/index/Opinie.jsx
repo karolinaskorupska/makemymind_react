@@ -83,6 +83,7 @@ class Opinie extends Component{
                                                 className="fas fa-chevron-left"
                                                 style={ChevronStyle}
                                                 fixedWidth
+                                                
                                                 />
                                             </div>
                                             {opinionsList.map((opinion)=>{
