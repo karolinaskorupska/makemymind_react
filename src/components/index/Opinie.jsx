@@ -21,6 +21,7 @@ library.add(
 const ChevronStyle = {
     color:"#9B9B9B",
     fontSize:"28px",
+    cursor:"pointer"
     //media?
 };
 // const ChevronHover={

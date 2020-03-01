@@ -63,12 +63,8 @@ section.opinie {
                 position: relative;
             }
 
-            
                 
-                
-               
-
-                    .carousel-container{
+                .carousel-container{
                         width: 1066px;
                         height: 250px;
                         display: flex;
@@ -185,67 +181,13 @@ section.opinie {
                             }
                         }
 
-                        
-
-                        // a{
-                        
-                        //     &.carousel-control-prev{
-                        //         align-self: center;
-                                
-                                
-                        //         @media(max-width:320px){
-                        //             position: absolute;
-                        //             bottom: 10px;
-                        //             left: 120px;
-                        //         }
-
-                        //         .fa-chevron-left{
-                        //             color:$navUlLiTextColor;
-                        //             font-size: 28px;
-    
-                        //             @media(max-width:1024px){
-                        //                 font-size: 16px;
-                        //             }
-        
-                        //             &:hover{
-                        //                 color:  $navUlLiTextColorHover;
-                        //             }
-                        //         }
-                        //     }
-                        //     &.carousel-control-next {
-                        //         align-self: center;
-
-                        //         @media(max-width:320px){
-                        //             position: absolute;
-                        //             bottom: 10px;
-                        //             right: 120px;
-                        //         }
-
-                        //         .fa-chevron-right{
-                        //             color:$navUlLiTextColor;
-                        //             font-size: 28px;
-    
-                        //             @media(max-width:1024px){
-                        //                 font-size: 16px;
-                        //             }
-        
-                        //             &:hover{
-                        //                 color:  $navUlLiTextColorHover;
-                        //             }
-                        //         }
-                                
-                        //     }
-                            
-    
-
+                        // .fa-chevron-right:hover,
+                        //  .fa-chevron-left:hover{
+                        //      cursor: pointer;
+                        //      color: #FFB700;
+                           
+                        // }
                         }
-
-                    
-
-
-                }
-
-
-                
+                }       
             }
         }

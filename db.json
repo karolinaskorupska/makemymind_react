@@ -93,29 +93,41 @@
       "email": "@",
       "message": "sd",
       "id": "9L2In6m"
+    },
+    {
+      "name": "fff",
+      "email": "fg@",
+      "message": "y8y8y",
+      "id": "sZ6J0PM"
+    },
+    {
+      "name": "as",
+      "email": "@",
+      "message": "sdf",
+      "id": "S3XQQvD"
     }
   ],
-  "opinions":[
+  "opinions": [
     {
-      "author":"Jan Kowalski",
+      "author": "Jan Kowalski",
       "position": "CEO Make My Mind",
-      "title":"Najlepsze treningi, na których byłem",
-      "opinionText":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!",
-      "photoPath":"../assets/illustration_testimonial.svg"
+      "title": "Najlepsze treningi, na których byłem",
+      "opinionText": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!",
+      "photoPath": "../assets/illustration_testimonial.svg"
     },
     {
-      "author":"Jan Kwalczyl",
+      "author": "Jan Kwalczyl",
       "position": "CEO Make My Mind",
-      "title":"Wiele rzeczy nie wiedziałem",
-      "opinionText":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!",
-      "photoPath":"../assets/illustration_testimonial.svg"
+      "title": "Wiele rzeczy nie wiedziałem",
+      "opinionText": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!",
+      "photoPath": "../assets/illustration_testimonial.svg"
     },
     {
-      "author":"Marian",
+      "author": "Marian",
       "position": "CEO Make My Mind",
-      "title":"Było super!",
-      "opinionText":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!",
-      "photoPath":"../assets/illustration_testimonial.svg"
+      "title": "Było super!",
+      "opinionText": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!",
+      "photoPath": "../assets/illustration_testimonial.svg"
     }
   ]
 }

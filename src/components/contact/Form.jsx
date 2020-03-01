@@ -1,6 +1,23 @@
 import React, { Component } from 'react';
 // formularz kontrolowany: imię i nazwisko nie może być puste, email musi zawierać @, wiadomość też nie może być pusta
+//fontawesome:
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import {
+    faCheckCircle,
+    faInfoCircle,
+    faTimesCircle
+   } from '@fortawesome/free-solid-svg-icons';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+library.add(
+    fab,
+    faCheckCircle,
+    faInfoCircle,
+    faTimesCircle
+  );
+
+  
 class Form extends Component{
 
     state={
@@ -130,10 +147,22 @@ class Form extends Component{
                 type="submit" value="Wyślij" 
                 onClick={this.handleSubmit}>Wyślij wiadomość</button>
                
-                {isValidated && <div className="alert green ok">Dziękujemy!</div>}
-                {errorName && <div className =" alert red error">{errorName}</div>}
-                {errorEmail && <div className ="alert red error">{errorEmail}</div>}
-                {errorMessage && <div className ="alert red error">{errorMessage}</div>}
+                {isValidated && <div className="alert green ok">
+                    <FontAwesomeIcon icon={['fas', 'check-circle']}
+                                                className="fas fa-check-circle"
+                                                fixedWidth></FontAwesomeIcon>Dziękujemy!</div>}
+                {errorName && <div className =" alert red error">
+                <FontAwesomeIcon icon={['fas', 'times-circle']}
+                                                className="fas fa-times-circle"
+                                                fixedWidth></FontAwesomeIcon>{errorName}</div>}
+                {errorEmail && <div className ="alert red error">
+                <FontAwesomeIcon icon={['fas', 'times-circle']}
+                                                className="fas fa-times-circle"
+                                                fixedWidth></FontAwesomeIcon>{errorEmail}</div>}
+                {errorMessage && <div className ="alert red error">
+                <FontAwesomeIcon icon={['fas', 'times-circle']}
+                                                className="fas fa-times-circle"
+                                                fixedWidth></FontAwesomeIcon>{errorMessage}</div>}
 
             </>
         ) 

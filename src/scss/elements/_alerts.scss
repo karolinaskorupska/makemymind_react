@@ -6,29 +6,32 @@ div.alert{
     padding: 7px 7px;
     box-sizing: border-box;
     margin-top: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .fas{
+        font-size: 20px;
+        margin-right: 10px;
+    }
 
     &.green{
         background-color: $greenAlertBackground;
         box-shadow: $greenAlertShadow;
-        color: #66BC6B;
-
+        color:$greenAlertColor;
+    
     }
 
     &.red{
         background: $redAlertBackground;
         box-shadow:$redAlertShadow;
         color:$redAlertColor;
-
-
     }
 
     &.blue{
         background-color: $blueAlertBackground;
         box-shadow: $blueAlertShadow;
-        color: #74ADF0;
-    
-
+        color:$blueAlertColor;
     }
 
     
