@@ -52,10 +52,10 @@ class Header extends Component{
                     <button className="sprawdz-trening">sprawdz trening!</button>
                     <button className="umow-sie">umów się za darmo</button>
                     <div className="hamburger-menu-icons">
-                        <Link to="https://www.linkedin.com/company/make-my-mind/"><img src={LinkedInDark} alt="LinkedIn"></img></Link>
-                        <Link to="https://www.facebook.com/makemymindpl/"><img src={FacebookDark} alt="Facebook"></img></Link>
-                        <Link to="#"><img src={TwitterDark} alt="Twitter"></img></Link>
-                        <Link to="https://www.instagram.com/make_my_mind/"><img src={InstagramDark} alt="Instagram"></img></Link>
+                        <Link to="https://www.linkedin.com/company/make-my-mind/" target="_blank"><img src={LinkedInDark} alt="LinkedIn"></img></Link>
+                        <Link to="https://www.facebook.com/makemymindpl/" target="_blank"><img src={FacebookDark} alt="Facebook"></img></Link>
+                        <Link to="#"><img src={TwitterDark} alt="Twitter" target="_blank"></img></Link>
+                        <Link to="https://www.instagram.com/make_my_mind/" target="_blank"><img src={InstagramDark} alt="Instagram"></img></Link>
                     </div>
                 </div>
                 

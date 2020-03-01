@@ -12,12 +12,11 @@ const Article =()=>{
             setTrainersList(trainers);
         });
     },[]);
-    console.log(trainersList)
+
     return (
         <article className="article trainer">
-           <Person />    
+           {trainersList.map((trainer, index)=><Person key={index} trainer={trainer}/>)}   
         </article>
-
     )
 }
 
