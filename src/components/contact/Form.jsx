@@ -11,8 +11,29 @@ class Form extends Component{
         errorEmail:'',
         errorMessage:'',
         isValidated:false,
-        formDataList:[],
+        // formDataList:[],
     }
+
+    createNewContact=()=>{
+        const newContact={
+            name: "Karolina",
+            email:"hhh@hh.pl",
+            message:"blabla"
+        }
+
+        fetch('http://localhost:4000/contactForm',{
+            method: 'POST',
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(newContact),
+        })
+        .then((response)=>response.json())
+        .then((newContact)=>{
+            console.log({newContact})
+        })
+    }
+
     handleChange=(event)=>{
         this.setState({
           [event.target.name]: event.target.value
@@ -58,6 +79,7 @@ class Form extends Component{
                 text: '' 
             })
         }
+        this.createNewContact();
       
       }
     render(){

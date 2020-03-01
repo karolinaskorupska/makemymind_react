@@ -19,10 +19,10 @@ const Footer = () => {
                 <div className="tel"><img src={PhoneIcon} alt="phoneIcon"></img>+48 000 000 000</div>
                 <div className="mail"><img src={EmailIcon} alt="EmailIcon"></img>kontakt@makemymind.pl</div>
                 <div className="icons">
-                    <Link to="https://www.linkedin.com/company/make-my-mind/"><img src={LinkedIn} alt="linkedin"></img></Link>
-                    <Link to="https://www.facebook.com/makemymindpl/"><img src={Facebook} alt="Facebook"></img></Link>
-                    <Link to="#"><img src={Twitter} alt="Twitter"></img></Link>
-                    <Link to="https://www.instagram.com/make_my_mind/"><img src={Instagram} alt="Instagram"></img></Link>
+                    <Link to="https://www.linkedin.com/company/make-my-mind/" target="_self"><img src={LinkedIn} alt="linkedin"></img></Link>
+                    <Link to="https://www.facebook.com/makemymindpl/" target="_self"><img src={Facebook} alt="Facebook"></img></Link>
+                    <Link to="#"><img src={Twitter} alt="Twitter" target="_self"></img></Link>
+                    <Link to="https://www.instagram.com/make_my_mind/" target="_self"><img src={Instagram} alt="Instagram"></img></Link>
                 </div>
             </div>    
             <div className="middle">
