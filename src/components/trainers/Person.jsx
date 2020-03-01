@@ -6,7 +6,6 @@ class Person extends Component{
     state={
         clicked:false
     }
-
     showMore=()=>{
         this.setState({
             clicked: !this.state.clicked
@@ -18,7 +17,7 @@ class Person extends Component{
         return(
             <div className="person">
                 <div className="introduce">
-                    <div className="image" src={photoPath}></div>
+                    <div className="image" ><img src={photoPath}></img></div>
                     <div className="name">{name}<br></br> {surname}</div>
                 </div>
                 <div className="description">

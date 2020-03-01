@@ -28,20 +28,22 @@
             flex-direction: row;
             align-items: center;
 
-            .image  {
-    
-                width:102px;
-                height:102px;
-                box-shadow: 0 12px 14px 0 rgba(201,201,201,0.50);
-                position:relative;
-                z-index: 1;
-                border:none;
-                border-radius:50%;
-
-                @media (max-width:320px){
-                    left: -10%;
+            .image{
+                img{
+                    width:150px;
+                    // height:102px;
+                    // box-shadow: 0 12px 14px 0 rgba(201,201,201,0.50);
+                    position:relative;
+                    z-index: 1;
+                    border:none;
+                    border-radius:50%;
+                    
+                    @media (max-width:320px){
+                        left: -10%;
+                        width: 100px;
+                    }
                 }
-                
+               
             }
 
             .name {
@@ -63,7 +65,12 @@
                 left:24%;
                 padding-left: 80px;
 
-                    
+                @media(min-width:1440px){
+                    left: 27%;
+                }
+                @media(max-width:1200px){
+                    left: 20%;
+                }
                 @media (max-width:1024px){
                     left: 16.5%;
                 }
@@ -87,21 +94,8 @@
                         }
                     }
             }
-            .aneta {
-                background-image: url("../../assets/photo_aneta.png");
-                background-size: cover ;
-                
-            }
-            .kinga {
-                background-image: url("../../assets/photo_kinga.png");
-                background-size: cover ;
-            }
-            .michal {
-                background-image: url("../../assets/photo_michal.png");
-                background-size: cover ;
-            }
-            
-        }
+
+                    }
 
         .description {
             

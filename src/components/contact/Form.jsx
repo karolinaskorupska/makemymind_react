@@ -115,7 +115,7 @@ class Form extends Component{
                             <label>Wpisz treść wiadomości </label>
                                 <textarea 
                                 wrap="on" 
-                                cols="60" rows="10" 
+                                rows="10" 
                                 placeholder="np. Chcę się umówić na zajęcia!"
                                 name="message"
                                 value={message}

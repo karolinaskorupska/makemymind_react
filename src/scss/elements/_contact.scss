@@ -63,7 +63,7 @@ main.contact{
         
         .txt {
             box-sizing: border-box;
-            width: 433px;
+            // width: 433px;
             margin-right:200px;
             display: flex;
             flex-direction: column;
@@ -109,6 +109,7 @@ main.contact{
             form{
                 width: 530px;
                 height: 170px;
+                max-width: 100%;
                 display: block;
                 @media(max-width:1024px){
                     width:465px;
@@ -195,6 +196,8 @@ main.contact{
                         color: $navUlLiTextColor;
                         padding: 5px 15px;
                         font-family: $font;
+
+                        width: 100%;
                         
                     }
                     textarea:focus{
