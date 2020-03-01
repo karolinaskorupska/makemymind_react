@@ -30,20 +30,9 @@ const ChevronStyle = {
 //zmienna przykładowa-będzie tu tablica obiektów:
 const slides=[1,2,3];
 
-// const [trainingsList, setTrainingsList] = useState([]);
-// useEffect(()=>{
-//     fetch('http://localhost:4000/trainings')
-//     .then((response)=>{
-//         return response.json();
-//     })
-//     .then((trainings)=>{
-//         setTrainingsList(trainings);
-//     });
-// },[]);
-
 class Opinie extends Component{
     state={
-        activeSlide:1,
+        activeSlide:0,
         opinionsList:[],
         
     }
@@ -82,7 +71,7 @@ class Opinie extends Component{
     }
 
     render(){
-        console.log(this.state.opinionsList)
+        const {opinionsList}=this.state;
         return(
             <section className="opinie">
                     <div className="container">
@@ -98,15 +87,16 @@ class Opinie extends Component{
                                                 fixedWidth
                                                 />
                                             </div>
-                                            {slides.map((n)=>{
+                                            {opinionsList.map((opinion)=>{
+                                        
                                                 return (
-                                                    <div key={n} className={`small-container ${this.state.activeSlide===n ? "visible" : "" }`}>
-                                                        <img className="opinieImg" src="assets/illustration_testimonial.svg" alt="obrazek opinii"
+                                                    <div key={opinion.author} className={`small-container ${this.state.activeSlide===opinionsList.indexOf(opinion) ? "visible" : "" }`}>
+                                                        <img className="opinieImg" src={opinion.photoPath} alt="obrazek opinii"
                                                         style={{width: "193px", height: "143px"}}></img>
                                                         <div className="carousel-txt-container">
-                                                            <h4>"Najlepsze treningi na jakich byłem!"</h4>
-                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis explicabo magnam deserunt, quia quisquam quos maxime reprehenderit aperiam ut odit officia!</p>
-                                                            <p className="person"><span>Jan Nowak {n}</span> | CEO Make My Mind</p>
+                                                            <h4>"{opinion.title}"</h4>
+                                                            <p>{opinion.opinionText}</p>
+                                                            <p className="person"><span>{opinion.author}</span> | {opinion.position}</p>
                                                         </div>
                                                     </div>
                                                 )
