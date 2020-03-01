@@ -27,9 +27,6 @@ const ChevronStyle = {
 //     color: "#FFB700"
 // }
 
-//zmienna przykładowa-będzie tu tablica obiektów:
-const slides=[1,2,3];
-
 class Opinie extends Component{
     state={
         activeSlide:0,
@@ -51,23 +48,23 @@ class Opinie extends Component{
     }
 
     setPrevSlide=()=>{
-        
+        const {opinionsList}=this.state;
         this.setState((state) => {
             const activeSlide= state.activeSlide -1;
             return {
-                activeSlide: activeSlide < 1 ? slides.length : activeSlide,
+                activeSlide: activeSlide < 0 ? opinionsList.length-1 : activeSlide,
             }
         });
     }
 
     setNextSlide=()=>{
+        const {opinionsList}=this.state;
         this.setState((state) => {
             const activeSlide= state.activeSlide +1;
             return {
-                activeSlide: activeSlide > slides.length ? 1 : activeSlide,
+                activeSlide: activeSlide > opinionsList.length-1 ? 0 : activeSlide,
             }
         });
-        console.log(this.state.activeSlide)
     }
 
     render(){
