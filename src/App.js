@@ -26,8 +26,8 @@ function App() {
           <Route exact path="/trainers" component={Trainers} />
           <Route exact path="/trainings" component={Trainings} />
           <Route exact path="/contact" component={Contact} />
-        </Switch>
-        <Footer /> */}
+        </Switch> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );

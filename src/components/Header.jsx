@@ -3,6 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import { Component } from "react";
 import { Container, Row, Col, Hidden, Visible } from "react-grid-system";
 
+
 class Header extends Component {
   state = {
     hamburgerIsOpen: false
@@ -21,9 +22,9 @@ class Header extends Component {
       <Container fluid>
         <Row>
           <header className={hamburgerIsOpen ? "hamburger-menu-on" : ""}>
-            <Col xl={3} lg={4} md={6} sm={4} xs={6} debug>
+            <Col xl={3} lg={4} md={6} sm={4} xs={6}>
               <div className="logo">
-                <img src="assets/Header_logo_MMM.svg" alt="logo"></img>
+                <img src="./assets/Header_logo_MMM.svg" alt="logo"></img>
                 <button
                   className="cross visible"
                   onClick={this.handleHamburgerMenu}
@@ -33,8 +34,9 @@ class Header extends Component {
                 </button>
               </div>
             </Col>
-            <Col xl={5} lg={1} md={0} sm={0} xs={0} debug>
+            <Col xl={5} lg={0} md={0} sm={0} xs={0} >
               <nav style={{ display: hamburgerIsOpen ? "block" : "none" }}>
+              
                 <ul>
                   <li>
                     <NavLink exact to="index" title="o nas" target="_self">
@@ -69,7 +71,7 @@ class Header extends Component {
                 </ul>
               </nav>
             </Col>
-            <Col xl={4} lg={7} md={6} sm={8} xs={6} debug>
+            <Col xl={4} lg={8} md={6} sm={8} xs={6} >
               <div className="sidenav">
                 <Visible lg xl>
                   <button className="sprawdz-trening">sprawdz trening!</button>
