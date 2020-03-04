@@ -2,102 +2,48 @@
 section.opinie {
     
     background-color: $backgroundGray;
-    height: 543px;
+    
 
     .container{
         background-color: $backgroundGray;
-        height: 543px;
+        
 
     }
 
     h2 {
         text-align: center;
-        padding-top: 87px;
+        padding-top: 7rem;
         font-weight: 700;
-        font-size: 39px;
         color: $h2TextColor;
         line-height: 45px;
-        @media(max-width:800px){
-            font-size: 28px;
-        }
-
-        @media (max-width:320px) {
-            font-size: 20px;
-            line-height: 25px;
-            padding-top: 30px;
-        }
-    
     }
 
     .carousel{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top:33px ;
+        margin-top:3rem;
+        margin-bottom: 7rem;
+        position: relative;
         .carousel-container-big{
             background: $backgroundColor;
             box-shadow: 0 5px 12px 0 $btnSprawdzTreningBorder;
             border-radius: 6px;
-            width: 1066px;
-            height: 250px;
+            width: 100rem;
+            max-height: 40rem;
+            
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            @media(max-width: 1024px){
-                width:893px ;
-            }
-
-            @media(max-width:800px){
-                width: 750px;
-            }
-            @media(max-width:600px) {
-                width: 550px;
-            }
-            @media(max-width:400px){
-                width: 350px;
-            }
-            @media(max-width:320px){
-                width: 280px;
-                height: 440px;
-                position: relative;
-            }
-
                 
                 .carousel-container{
-                        width: 1066px;
-                        height: 250px;
+
                         display: flex;
                         flex-direction: row;
                         justify-content: space-around;
                         align-items: center;
-                        @media(max-width:1024px){
-                            width: 893px;
 
-                            img.opinieImg {
-                                width: 193px;
-                                height: 143px;
-                                @media(max-width:400px){
-                                    display: none;
-                                }
-                                @media(max-width: 320px){
-                                    display: none;
-                                }
-                            }
-                        }
-                        @media(max-width:800px){
-                            width: 710px;
-                        }
-                        @media(max-width:600px) {
-                            width: 550px;
-
-                            img.opinieImg{
-                                display: none;
-                            }
-                        }
-                        @media(max-width:400px){
-                            width: 350px;
-                        }
 
                         .small-container {
                             display: none;
@@ -111,57 +57,26 @@ section.opinie {
                                 width:100%;
                             }
                             .carousel-txt-container {
-                                width: 560px;
+                                width: 55%;
                                 text-align: left;
-    
-                                @media(max-width:800px){
-                                    width: 400px;
-                                }
-                                @media(max-width:400px){
-                                    width: 300px;
-                                }
-                                
-                                @media(max-width:320px){
-                                    width: 230px;
-                                    
-                                }
-    
-                               
+                                padding: 3rem 1rem;
     
                                 h4{
-                                    margin-top: 32px;
                                     text-align: left;
-                                    margin-bottom: 2px;  
-    
+                                    margin-bottom: 0.05rem;  
                                     font-family: $font;
                                     font-weight: 400;
                                     font-size:20px;
                                     color: $h4TextColor;
-                    
                                     line-height: 45px;
-                                    @media(max-width:400px){
-                                        margin-top: 10px;
-                                        line-height: 30px;
-                                        text-align: center;
-                                    }
-                                    @media(max-width: 320px){
-                                        margin-top: 10px;
-                                        line-height: 30px;
-                                        text-align: center;
-                                    }
                                 }
                                 p{
                                     font-weight: 400;
                                     font-size: 14px;
                                     color: $pTextColor;
                                     line-height: 25px;
-                                    margin-top: 20px;
-                                    margin-bottom: 20px;
-    
-                                    
-                                    @media(max-width:400px){
-                                        text-align: center;
-                                    }
+                                    margin-top: 2rem;
+                                    margin-bottom: 2rem;
     
                                     &.person{
                                         font-family: $font;

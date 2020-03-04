@@ -8,27 +8,45 @@ const Welcome = () => {
         <Row>
           <Col>
             <div className="txt">
-                <div>
-                    <ScreenClassRender render={screenClass => (
-                        <h2 style={{ fontSize: ['lg', 'xl'].includes(screenClass) ? '39px' : '28px',
-                        lineHeight: ['lg', 'xl'].includes(screenClass) ? '45px' : '25px'}}>
-                         Zadbaj o umysł, tak <br></br> jak dbasz o swoje ciało!
-                       </h2> 
-                    )} />
+              <div>
+                <ScreenClassRender
+                  render={screenClass => (
+                    <h2
+                      style={{
+                        fontSize: ["lg", "xl"].includes(screenClass)
+                          ? "39px"
+                          : "28px",
+                        lineHeight: ["lg", "xl"].includes(screenClass)
+                          ? "45px"
+                          : "25px"
+                      }}
+                    >
+                      Zadbaj o umysł, tak <br></br> jak dbasz o swoje ciało!
+                    </h2>
+                  )}
+                />
 
-                    <ScreenClassRender render={screenClass => (
-                        <p style={{ fontSize: ['lg', 'xl'].includes(screenClass) ? '14px' : '12px'}}>
-                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
-                        beatae, ullam optio dicta non eligendi pariatur? Numquam, omnis
-                        explicabo magnam deserunt, quia quisquam quos maxime
-                        reprehenderit aperiam ut odit officia!
-                       </p> 
-                    )} />       
-              <button className="umow-sie">umów się za darmo!</button>
+                <ScreenClassRender
+                  render={screenClass => (
+                    <p
+                      style={{
+                        fontSize: ["lg", "xl"].includes(screenClass)
+                          ? "14px"
+                          : "12px"
+                      }}
+                    >
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      A beatae, ullam optio dicta non eligendi pariatur?
+                      Numquam, omnis explicabo magnam deserunt, quia quisquam
+                      quos maxime reprehenderit aperiam ut odit officia!
+                    </p>
+                  )}
+                />
+                <button className="umow-sie">umów się za darmo!</button>
               </div>
             </div>
           </Col>
-          <Col >
+          <Col>
             <div className="img">
               <img
                 className="grow"

@@ -1,50 +1,50 @@
-import React from 'react';
+import React from "react";
+import { Container, Row, Col, ScreenClassRender } from "react-grid-system";
+import SmallBox1 from "../index/proces/SmallBox1";
+import SmallBox2 from "../index/proces/SmallBox2";
+import SmallBox3 from "../index/proces/SmallBox3";
 
-const Proces =()=>{
-    return(
-        <section className="proces">
+const Proces = () => {
+  return (
+    <section className="proces">
+      <Container>
+        <Row>
+          <Col>
+            <ScreenClassRender
+              render={screenClass => (
+                <h2
+                  style={{
+                    fontSize: ["lg", "xl"].includes(screenClass)
+                      ? "39px"
+                      : "28px",
+                    lineHeight: ["lg", "xl"].includes(screenClass)
+                      ? "45px"
+                      : "25px"
+                  }}
+                >
+                  Proces
+                </h2>
+              )}
+            />
+          </Col>
+        </Row>
 
-            <h2>Proces</h2>
-            <div className="container-big">
-                <div className="container-small">
-                    <div className="numbers">
-                        <div>1.</div>
-                    </div>
-                    <div className="box">
-                        <h4>Badanie biofeedback<hr></hr></h4>
-                        
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis debitis facere tenetur sunt,  </p>
-                        <a href="dowiedz.sie.wiecej">Dowiedz się więcej</a>
-                    </div>
-                </div>
-                <div className="container-small">
-                    <div className="numbers">
-                        <div>2.</div>
-                    </div>
-                    <div className="box">
-                        <h4>Szczegółowy raport<hr></hr></h4>
-                            
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis debitis facere tenetur sunt,  </p>
-                        <a href="dowiedz.sie.wiecej">Dowiedz się więcej</a>
-                    </div>
-                </div>
-
-                <div className="container-small">
-                    <div className="numbers">
-                        <div>3.</div>
-                    </div>
-                    <div className="box">
-
-                        <h4>Dopasowane treningi<hr></hr></h4>
-                        
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis debitis facere tenetur sunt,   </p>
-                        <a href="dowiedz.sie.wiecej">Dowiedz się więcej</a>
-                    </div>
-                </div>
-            </div>
-
+        <div className="container-big">
+          <Row>
+            <Col>
+              <SmallBox1 />
+            </Col>
+            <Col>
+              <SmallBox2 />
+            </Col>
+            <Col>
+              <SmallBox3 />
+            </Col>
+          </Row>
+        </div>
+      </Container>
     </section>
-    )
-}
+  );
+};
 
 export default Proces;

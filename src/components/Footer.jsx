@@ -6,8 +6,8 @@ import FooterRight from "./footer/FooterRight";
 
 const Footer = () => {
   return (
-    <Container fluid>
-      <footer>
+    <footer>
+      <Container fluid>
         <div className="footer">
           <Row>
             <Col>
@@ -28,8 +28,8 @@ const Footer = () => {
             <div className="copyrights">Copyrights @ Make my mind 2019</div>
           </Col>
         </Row>
-      </footer>
-    </Container>
+      </Container>
+    </footer>
   );
 };
 
