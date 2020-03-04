@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
 import { Container, Row, Col } from "react-grid-system";
 import FooterLeft from "./footer/FooterLeft";
 import FooterMiddle from "./footer/FooterMiddle";

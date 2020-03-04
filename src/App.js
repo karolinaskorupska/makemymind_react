@@ -20,13 +20,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        {/* <Switch>
+        <Switch>
           <Route exact path="/" component={Index} />
-          <Route exact path="/index" component={Index} />
+          {/* <Route exact path="/index" component={Index} />
           <Route exact path="/trainers" component={Trainers} />
           <Route exact path="/trainings" component={Trainings} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch> */}
+          <Route exact path="/contact" component={Contact} /> */}
+        </Switch>
         <Footer />
       </BrowserRouter>
     </div>
