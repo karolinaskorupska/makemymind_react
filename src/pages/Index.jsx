@@ -13,9 +13,9 @@ const Index = () => {
         <Proces />
       </div>
       <Opinie />
-      {/* <div className="container">
+      <div className="container">
         <Calendar />
-      </div> */}
+      </div>
     </main>
   );
 };

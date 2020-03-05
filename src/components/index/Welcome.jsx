@@ -15,10 +15,13 @@ const Welcome = () => {
                       style={{
                         fontSize: ["lg", "xl"].includes(screenClass)
                           ? "39px"
-                          : "28px",
+                          : "20px",
                         lineHeight: ["lg", "xl"].includes(screenClass)
                           ? "45px"
-                          : "25px"
+                          : "25px",
+                        textAlign: ["lg", "xl"].includes(screenClass)
+                          ? "left"
+                          : "center"
                       }}
                     >
                       Zadbaj o umysł, tak <br></br> jak dbasz o swoje ciało!
@@ -62,3 +65,7 @@ const Welcome = () => {
 };
 
 export default Welcome;
+
+
+
+

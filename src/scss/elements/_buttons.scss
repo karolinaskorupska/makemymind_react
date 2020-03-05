@@ -26,6 +26,7 @@ button.sprawdz-trening:hover {
 
 /* dlaczego cień jest czarny na buttonie żółtym?! */
 button.umow-sie {
+    width: 241px;
     background-color: $btnUmowSieBackground;
     box-shadow: 0 10px 12px 0 $btnUmowSieShadow;
     border-radius: 48px;

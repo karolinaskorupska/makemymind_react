@@ -18,12 +18,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 library.add(fab, faSpinner, faChevronRight, faChevronLeft);
 
-//   style dla fontawesome:
-const ChevronStyle = {
-  color: "#9B9B9B",
-  fontSize: "28px",
-  cursor: "pointer"
-};
 
 class Opinie extends Component {
   state = {
@@ -79,7 +73,7 @@ class Opinie extends Component {
                       style={{
                         fontSize: ["lg", "xl"].includes(screenClass)
                           ? "39px"
-                          : "28px",
+                          : "20px",
                         lineHeight: ["lg", "xl"].includes(screenClass)
                           ? "45px"
                           : "25px"

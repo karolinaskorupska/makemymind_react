@@ -1,110 +1,36 @@
 
 
 section.calendar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    @media(max-width:400px){
-        display: flex;
-        flex-direction: column;
-    }
-    @media(max-width:320px){
-        display: flex;
-        flex-direction: column;
-    }
-
+    
     .img-calendar img {
-        width: 539px;
-        height: 525px;
-        margin-top: 39px;
-        margin-right: 94px;
-        margin-bottom: 61px;
-        @media(max-width:1024px){
-            width: 417px;
-            height: 406px;
-        }
-        @media(max-width:800px){
-            width: 300px;
-            margin-top: 39px;
-            margin-right: 40px;
-            margin-bottom: 61px;
-        }
-        @media(max-width:600px){
-            width: 241px;
-            height: 235px;
-            margin-top: 10px;
-            margin-right: 5px;
-            margin-bottom: 10px;
-        }
-        @media(max-width:400px){
-            width: 241px;
-            height: 235px;
-            margin-top: 10px;
-            margin-right: 5px;
-            margin-bottom: 10px;
-        }
-        @media(max-width:320px){
-            width: 241px;
-            height: 235px;
-            margin-top: 10px;
-            margin-right: 5px;
-            margin-bottom: 10px;
-        }
+        
+        margin-top: 7rem;
+        width: 90%;
+        margin-bottom: 6rem;
     }
 
     .txt {
-        width: 422px;
 
-        @media(max-width:800px){
-            width: 350px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+
+        text-align: left;
+        margin-top: 9rem;
+        margin-bottom: 2rem;
         
-        @media(max-width:320px){
-            width: 259px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
 
         h2 {
             text-align: left;
-            margin-bottom: 24px;
+            margin-bottom: 2rem;
             font-weight: 700;
-            font-size: 39px;
             color: $h2TextColor;
-            line-height: 45px;
-            @media(max-width:800px){
-                font-size: 28px;
-            }
-            @media(max-width: 400px){
-                font-size: 20px;
-                line-height: 25px;
-                text-align: center;
-            }
-
-            @media(max-width: 320px){
-                font-size: 20px;
-                line-height: 25px;
-                text-align: center;
-            }
+            
         }
         
         p {
-            margin-bottom: 29px;
+            margin-bottom: 2rem;
             font-weight: 400;
             font-size: 14px;
             color: $pTextColor;
             line-height: 25px;
-
-            @media(max-width:320px){
-                width: 259px;
-                text-align: center;
-            }
         }
 
         a {
@@ -113,27 +39,10 @@ section.calendar{
             color:$navUlLiTextColor;
             font-size: 14px;
             text-decoration: none;
-            margin-left: 36px;
-
-            @media(max-width:800px){
-                text-align: left;
-                margin-left: 20px;
-                margin-top: 20px;
-                margin-bottom: 60px;
-            }
-
-            @media(max-width: 320px){
-                text-align: center;
-                margin-left: 0;
-                margin-top: 20px;
-                margin-bottom: 60px;
-            }
-        }
-        
-        button.umow-sie {
-            width: 241px;
+            margin-left: 2rem;
 
         }
+
     }
 
 }
