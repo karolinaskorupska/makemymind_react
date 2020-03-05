@@ -1,5 +1,6 @@
 # makemymind_website_react
 for learning purposes-website done in react. I'm doing it for learning purpose. 
+All components works with React-Grid-System.
 
 - INDEX component Opinie is rendering from DataBase- made with custom made carousel,
 - HEADER has custom made hamburger menu,
