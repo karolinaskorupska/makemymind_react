@@ -22,7 +22,7 @@ class Header extends Component {
       <Container fluid>
         <Row>
           <header className={hamburgerIsOpen ? "hamburger-menu-on" : ""}>
-            <Col xl={3} lg={4} md={6} sm={4} xs={6}>
+            <Col xs={12} style={{ flex: 0 }} >
               <div className="logo">
                 <img src="./assets/Header_logo_MMM.svg" alt="logo"></img>
                 <button
@@ -34,9 +34,9 @@ class Header extends Component {
                 </button>
               </div>
             </Col>
-            <Col xl={5} lg={0} md={0} sm={0} xs={0} >
-              <nav style={{ display: hamburgerIsOpen ? "block" : "none" }}>
-              
+            <Row>
+              { hamburgerIsOpen ? (<nav>
+
                 <ul>
                   <li>
                     <NavLink exact to="index" title="o nas" target="_self">
@@ -69,9 +69,9 @@ class Header extends Component {
                     </NavLink>
                   </li>
                 </ul>
-              </nav>
-            </Col>
-            <Col xl={4} lg={8} md={6} sm={8} xs={6} >
+              </nav>) : false }
+            </Row>
+            <Row>
               <div className="sidenav">
                 <Visible lg xl>
                   <button className="sprawdz-trening">sprawdz trening!</button>
@@ -127,7 +127,7 @@ class Header extends Component {
                   </button>
                 </Visible>
               </div>
-            </Col>
+            </Row>
           </header>
         </Row>
       </Container>
