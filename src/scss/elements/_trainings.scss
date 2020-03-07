@@ -10,11 +10,6 @@ main .trainings {
         margin-top: 7rem;
         margin-bottom: 4rem;
         font-weight: 800;
-
-        @media(max-width:600px){
-            
-            // width: 257px;         
-        }
     }
 
     .big-box {
@@ -30,9 +25,6 @@ main .trainings {
             flex-direction: column;
             width: 18rem;
             margin-bottom: 2rem;
-            // @media(max-width:600px){
-            //     margin-bottom:45px ;
-            // }
 
             .photo-box{
             
@@ -52,7 +44,6 @@ main .trainings {
                 align-items: flex-start;
                 justify-content: center;
                 box-sizing: border-box;
-                
                 box-shadow:0 5px 12px 0 $borderColor; 
                 border-radius: 6px;
 
@@ -60,23 +51,23 @@ main .trainings {
                     font-size: 20px;
                     color: $h4TextColor;
                     line-height: 45px;
-                    padding-left: 23px;
+                    padding-left: 1rem;
                 }
                 span{
                     color: $trainingsTextPrice;
                     font-size: 24px;
                     border-bottom: 3px solid $spanBorderBottom;
-                    padding: 7px 0;
+                    padding: 0.5rem 0;
                     width:140px ;
-                    padding-left: 23px;
+                    padding-left: 1.5rem;
                 }
 
                 .p-box{
                     font-size: 14px;
                     line-height: 25px;
                     color: $pTextColor;
-                    padding:5px 5px;
-                    padding-left: 23px;
+                    padding:0.3rem 0.3rem;
+                    padding-left: 1rem;
                 }
                 .icon-box{
                     display: flex;
@@ -90,23 +81,23 @@ main .trainings {
                 }
                 .watch, .location{
                     
-                    height: 55px;
+                    height: 3.5rem;
                     display:flex;
                     flex-direction: row;
-                    margin:5px 10px;
+                    margin:0.3rem 0.8rem;
                     align-items: center;
 
                     img{
-                        margin-right: 5px;
+                        margin-right: 0.3rem;
                     }
                     .txt{
                         
-                        width:94px;
+                        width:6rem;
                     }
                 }
 
                 button.zapisz-sie{
-                   margin-left: 37px; 
+                   margin-left: 2.5rem; 
                    
                 }
                 
@@ -115,7 +106,7 @@ main .trainings {
 
             a{
                 display: block;
-                margin:11px 78px;
+                margin:0.8rem 5rem;
                 text-align: center;
                 text-decoration: none;
                 color: $navUlLiTextColor;

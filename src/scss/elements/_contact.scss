@@ -1,137 +1,52 @@
-//div .container o kolorze tła białym, biegnie przez 2 pierwsze sekcje, welcome i opinie
-
 
 main.contact{
-
-    height: 600px;
-
-    @media(max-width:1024px){
-        height: 500px;
-    }
-
-    @media(max-width:400px){
-        height: 700px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .contact {
-        margin-top: 100px;
-        margin-bottom: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 1440px;
-        @media(max-width: 1024px){
-            width: 1024px;
-        }
-        @media(max-width:800px){
-            width: 800px;
-            margin-top: 50px;
-        }
-        @media(max-width:600px){
-            display: flex;
-            flex-direction: column;
-            margin-top: 10px;
-            width: 600px;
-        }
-        @media(max-width:400px){
-            display: flex;
-            flex-direction: column;
-            margin-top: 10px;
-            width: 400px;
-        }
-        @media(max-width:320px){
-            display: flex;
-            flex-direction: column;
-            margin-top: 10px;
-            width: 320px;
-        }
+        margin-top:8rem;
+        margin-bottom: 7rem;
+        width: 80%;
 
-        .img img.grow {
-            width: 397px;
-            height: 388px;
-
-            @media(max-width:800px){
-                width: 300px;
-                
-            }
-
-            @media(max-width: 320px){
-                width: 149px;
-                height: 146px;
+        .img{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:center;
+            img.grow{
+                height: 70%;
+                display: block;
             }
         }
-        
+             
         .txt {
             box-sizing: border-box;
-            // width: 433px;
-            margin-right:200px;
+            width: 37rem;
+            margin-right: 3rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-
-            @media(max-width:1024px){
-                margin-right: 80px;
-            }
-
-            @media(max-width:800px){
-                width: 300px;
-                margin-right: 50px;
-                
-            }
-
-            @media(max-width:320px){
-                width: 277px;
-                margin: 15px auto;
-                text-align: center;
-                
-            }
-
             h2 {
                
                 font-weight: 700;
-                font-size: 39px;
                 color: $h2TextColor;
-                line-height: 45px;
-                margin-bottom: 23px;
-                text-align: start;
-
-                @media(max-width:800px){
-                    font-size: 28px;
-                    line-height: 25px;
-                }
-                @media(max-width: 320px){
-                    font-size: 20px;
-                    line-height: 25px;
-                }
+                margin-bottom: 2rem;
             }
             
             form{
-                width: 530px;
-                height: 170px;
+                width: 90%;
                 max-width: 100%;
                 display: block;
-                @media(max-width:1024px){
-                    width:465px;
-                }
-                @media(max-width:320px){
-                    width: 280px;
-                }
-
+             
                 .personal-data{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
 
-                    @media(max-width:600px){
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items:center;
-                    }
-
                     label{
-                        margin-left: 10px;
+                        margin-left: 0.8rem;
                         text-align: start;
                     }
 
@@ -140,7 +55,7 @@ main.contact{
                         font-size: 14px;
                         color: $pTextColor;
                         line-height: 25px;
-                        margin-bottom: 10px;
+                        margin-bottom: 0.8rem;
                     }
                     input{
                         box-sizing: border-box;
@@ -149,7 +64,7 @@ main.contact{
                         border-radius: 17.5px;
                         font-size: 14px;
                         color: $navUlLiTextColor;
-                        padding: 2px 15px;
+                        padding: 0.1rem 1rem;
                     }
                     input:focus{
                         border: 1px solid $navUlLiTextColorHover;
@@ -159,34 +74,27 @@ main.contact{
                     .name{
                     
                         input{
-                            width: 230px;
-                            height: 30px;
-
-                            @media(max-width:1024px){
-                                width:190px;
-                            }
+                            width: 14rem;
+                            height: 2rem;
                         }
                     }
 
                     .email{
                         input{
-                            width:270px;
-                            height: 30px;
-
-                            @media(max-width:1024px){
-                                width:260px;
-                            }
+                            width: 16rem;
+                            height: 2rem;
                         }
                     }
-                    display: flex;
-                    flex-direction: row;
                 }
 
                 .textarea{
-
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    
                     textarea{
                         resize: none;
-                    
                         border: 1px solid $borderColor;
                         box-shadow: 0 5px 12px 0 rgba(226,226,226,0.50);
                         border-radius: 17.5px;
@@ -194,41 +102,31 @@ main.contact{
                         color: $navUlLiTextColor;
                         font-size: 14px;
                         color: $navUlLiTextColor;
-                        padding: 5px 15px;
+                        padding: 0.5rem 1rem;
                         font-family: $font;
-
-                        width: 100%;
-                        
+                        width: 100%;   
                     }
                     textarea:focus{
                         border: 1px solid $navUlLiTextColorHover;
                     }
                     label{
                         display: block;
-                        margin-left: 10px;
+                        margin-left: 0.8rem;
                         font-size: 14px;
                         color: $pTextColor;
                         line-height: 25px;
-                        margin-bottom: 10px;
+                        margin-bottom: 0.8rem;
                         text-align: start;
-                    }
-                    
-                    
-                    
-                }
-            
+                  }                     
+                }        
             }
             
             button.wyslij-wiadomosc {
-                margin-top:170px;
+                margin-left: 0.8rem;
+                margin-top:2rem;
+                margin-bottom: 2rem;
                 align-self: flex-start;
-                @media(max-width:500px){
-                    margin-top: 200px;
-                }
             }
         }
-        
-
     }   
-
 }

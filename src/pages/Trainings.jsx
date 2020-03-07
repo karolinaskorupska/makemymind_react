@@ -3,8 +3,6 @@ import {
   Container,
   Row,
   Col,
-  Hidden,
-  Visible,
   ScreenClassRender
 } from "react-grid-system";
 import Training from "../components/trainings/Training";
