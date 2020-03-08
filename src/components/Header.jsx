@@ -1,5 +1,5 @@
 import React from "react";
-
+// import { NavLink } from "react-router-dom";
 import { Component } from "react";
 import Navigation from "./header/Navigation";
 import HamburgerMenuIcons from "./header/HamburgerMenuIcons";
@@ -10,9 +10,16 @@ class Header extends Component {
     hamburgerIsOpen: false
   };
 
+
   handleHamburgerMenu = () => {
     this.setState({
       hamburgerIsOpen: !this.state.hamburgerIsOpen
+    });
+  };
+
+  handleHamburgerMenuClose = () => {
+    this.setState({
+      hamburgerIsOpen: false
     });
   };
 
@@ -29,8 +36,7 @@ class Header extends Component {
           </button>
         </div>
 
-        <Navigation />
-
+        <Navigation handleHamburgerMenu={this.handleHamburgerMenuClose} />
         <div className="sidenav">
           <HeaderButtons />
           <HamburgerMenuIcons />

@@ -12,7 +12,11 @@
 
     }
     .container-big {
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
     
     .container-small{
         width: 17rem;

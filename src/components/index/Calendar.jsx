@@ -39,13 +39,13 @@ const Calendar = () => {
                     render={screenClass => (
                       <h2
                         style={{
-                          fontSize: ["lg", "xl"].includes(screenClass)
+                          fontSize: ["md","lg", "xl"].includes(screenClass)
                             ? "39px"
                             : "20px",
-                          lineHeight: ["lg", "xl"].includes(screenClass)
+                          lineHeight: ["md","lg", "xl"].includes(screenClass)
                             ? "45px"
                             : "25px",
-                          textAlign: ["lg", "xl"].includes(screenClass)
+                          textAlign: ["md","lg", "xl"].includes(screenClass)
                             ? "left"
                             : "center"
                         }}
@@ -64,7 +64,23 @@ const Calendar = () => {
                   <button className="umow-sie">
                     umów się na darmowe badanie
                   </button>
-                  <a href="dowiedz.sie.wiecej">Dowiedz się więcej</a>
+                  <ScreenClassRender
+                    render={screenClass => (
+                      <a href="dowiedz.sie.wiecej"
+                        style={{
+                          marginLeft: ["md","lg", "xl"].includes(screenClass)
+                            ? "2rem"
+                            : "0",
+                            marginTop: ["md","lg", "xl"].includes(screenClass)
+                            ? "0"
+                            : "2rem"
+                        }}
+                      >
+                        Dowiedz się więcej
+                      </a>
+                    )}
+                  />
+            
                 </div>
               )}
             />

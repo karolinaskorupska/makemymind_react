@@ -14,10 +14,10 @@ const Proces = () => {
               render={screenClass => (
                 <h2
                   style={{
-                    fontSize: ["lg", "xl"].includes(screenClass)
+                    fontSize: ["md", "lg", "xl"].includes(screenClass)
                       ? "39px"
                       : "20px",
-                    lineHeight: ["lg", "xl"].includes(screenClass)
+                    lineHeight: ["md", "lg", "xl"].includes(screenClass)
                       ? "45px"
                       : "25px"
                   }}
@@ -29,19 +29,17 @@ const Proces = () => {
           </Col>
         </Row>
 
-        <div className="container-big">
-          <Row>
-            <Col>
+        <Row>
+          <Col>
+            <div className="container-big">
               <SmallBox1 />
-            </Col>
-            <Col>
+
               <SmallBox2 />
-            </Col>
-            <Col>
+
               <SmallBox3 />
-            </Col>
-          </Row>
-        </div>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </section>
   );

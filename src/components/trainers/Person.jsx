@@ -40,18 +40,21 @@ class Person extends Component {
                   <div
                     className="name"
                     style={{
-                      fontSize: ["lg", "xl"].includes(screenClass)
+                      fontSize: ["md","lg", "xl"].includes(screenClass)
                         ? "39px"
                         : "20px",
-                      lineHeight: ["lg", "xl"].includes(screenClass)
+                      lineHeight: ["md","lg", "xl"].includes(screenClass)
                         ? "45px"
                         : "25px",
-                      width: ["lg", "xl"].includes(screenClass)
+                      width: ["md","lg", "xl"].includes(screenClass)
                         ? "25rem"
                         : "12rem",
-                      marginLeft: ["sm","md","lg", "xl"].includes(screenClass)
-                        ? "0"
-                        : "-8%"
+                      marginLeft: ["md","lg", "xl"].includes(screenClass)
+                        ? "3%"
+                        : "-3%",
+                      padding: ["sm","md","lg", "xl"].includes(screenClass)
+                        ? "1rem"
+                        : "0.3rem"
                     }}
                   >
                     {name} {""}

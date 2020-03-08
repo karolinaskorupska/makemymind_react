@@ -29,9 +29,6 @@ const Trainers = () => {
                           lineHeight: ["lg", "xl"].includes(screenClass)
                             ? "45px"
                             : "25px",
-                          textAlign: ["lg", "xl"].includes(screenClass)
-                            ? "center"
-                            : "left",
                            marginBottom: ["md","lg", "xl"].includes(screenClass)
                             ? "4rem"
                             : "2rem"

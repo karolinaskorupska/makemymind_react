@@ -71,10 +71,10 @@ class Opinie extends Component {
                   render={screenClass => (
                     <h2
                       style={{
-                        fontSize: ["lg", "xl"].includes(screenClass)
+                        fontSize: ["md","lg", "xl"].includes(screenClass)
                           ? "39px"
                           : "20px",
-                        lineHeight: ["lg", "xl"].includes(screenClass)
+                        lineHeight: ["md","lg", "xl"].includes(screenClass)
                           ? "45px"
                           : "25px"
                       }}
