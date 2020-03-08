@@ -61,7 +61,7 @@ const Contact = () => {
                       src="assets/illustration_grow.svg"
                       alt="grow!"
                       style={{
-                        height: ["lg", "xl"].includes(screenClass)
+                        height: ["md","lg", "xl"].includes(screenClass)
                           ? "70%"
                           : "15rem"
                       }}
