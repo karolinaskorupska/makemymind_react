@@ -118,14 +118,27 @@ class Form extends Component {
                     : "column",
                   justifyContent: ["lg", "xl"].includes(screenClass)
                     ? "space-between"
-                    : "center",
-                    // alignItems: ["lg", "xl"].includes(screenClass)
-                    // ? "center"
-                    // : "center"
+                    : "center"
                 }}
               >
                 <div className="name">
-                  <label>Wpisz imię i nazwisko </label>
+                  <ScreenClassRender
+                    render={screenClass => (
+                      <label
+                        style={{
+                          textAlign: ["lg", "xl"].includes(screenClass)
+                            ? "left"
+                            : "center",
+                          marginRight: ["lg", "xl"].includes(screenClass)
+                            ? "0.8rem"
+                            : "0"
+                        }}
+                      >
+                        Wpisz imię i nazwisko
+                      </label>
+                    )}
+                  />
+
                   <input
                     type="text"
                     name="name"
@@ -135,7 +148,22 @@ class Form extends Component {
                   />
                 </div>
                 <div className="email">
-                  <label> Wpisz adres e-mail </label>
+                  <ScreenClassRender
+                    render={screenClass => (
+                      <label
+                        style={{
+                          textAlign: ["lg", "xl"].includes(screenClass)
+                            ? "left"
+                            : "center",
+                          marginRight: ["lg", "xl"].includes(screenClass)
+                            ? "0.8rem"
+                            : "0"
+                        }}
+                      >
+                        Wpisz adres e-mail
+                      </label>
+                    )}
+                  />
                   <input
                     value={email}
                     type="email"
@@ -149,7 +177,22 @@ class Form extends Component {
           />
 
           <div className="textarea">
-            <label>Wpisz treść wiadomości </label>
+            <ScreenClassRender
+              render={screenClass => (
+                <label
+                  style={{
+                    textAlign: ["lg", "xl"].includes(screenClass)
+                      ? "left"
+                      : "center",
+                    marginRight: ["lg", "xl"].includes(screenClass)
+                      ? "0.8rem"
+                      : "0"
+                  }}
+                >
+                  Wpisz treść wiadomości
+                </label>
+              )}
+            />
             <textarea
               wrap="on"
               rows="10"
