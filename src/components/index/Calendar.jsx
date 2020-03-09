@@ -68,10 +68,10 @@ const Calendar = () => {
                     render={screenClass => (
                       <a href="dowiedz.sie.wiecej"
                         style={{
-                          marginLeft: ["md","lg", "xl"].includes(screenClass)
+                          marginLeft: ["lg", "xl"].includes(screenClass)
                             ? "2rem"
                             : "0",
-                            marginTop: ["md","lg", "xl"].includes(screenClass)
+                            marginTop: ["lg", "xl"].includes(screenClass)
                             ? "0"
                             : "2rem"
                         }}

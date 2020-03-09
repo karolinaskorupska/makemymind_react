@@ -1,5 +1,5 @@
 import React from "react";
-import { ScreenClassRender } from "react-grid-system";
+
 
 const SmallBox1 = () => {
   return (

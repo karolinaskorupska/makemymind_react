@@ -1,5 +1,5 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Component } from "react";
 import Navigation from "./header/Navigation";
 import HamburgerMenuIcons from "./header/HamburgerMenuIcons";
@@ -29,7 +29,7 @@ class Header extends Component {
     return (
       <header className={hamburgerIsOpen ? "hamburger-menu-on" : ""}>
         <div className="logo">
-          <img src="assets/Header_logo_MMM.svg" alt="logo"></img>
+        <Link onClick={this.handleHamburgerMenu} exact to="index" title="o nas" target="_self"><img src="assets/Header_logo_MMM.svg" alt="logo"></img></Link>
           <button className="cross visible" onClick={this.handleHamburgerMenu}>
             <span></span>
             <span></span>

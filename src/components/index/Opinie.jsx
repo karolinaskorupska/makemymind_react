@@ -102,7 +102,7 @@ class Opinie extends Component {
                                   ? "absolute"
                                   : "relative",
                                 bottom: ["xs"].includes(screenClass) && "2rem",
-                                right: ["xs"].includes(screenClass) && "60%",
+                                right: ["xs"].includes(screenClass) && "65%",
                                 color: "#9B9B9B",
                                 fontSize: "28px",
                                 cursor: "pointer"
@@ -173,7 +173,7 @@ class Opinie extends Component {
                                   ? "absolute"
                                   : "relative",
                                 bottom: ["xs"].includes(screenClass) && "2rem",
-                                right: ["xs"].includes(screenClass) && "40%",
+                                right: ["xs"].includes(screenClass) && "25%",
                                 color: "#9B9B9B",
                                 fontSize: "28px",
                                 cursor: "pointer"

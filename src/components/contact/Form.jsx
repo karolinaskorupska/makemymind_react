@@ -126,10 +126,10 @@ class Form extends Component {
                     render={screenClass => (
                       <label
                         style={{
-                          textAlign: ["lg", "xl"].includes(screenClass)
+                          textAlign: ["md","lg", "xl"].includes(screenClass)
                             ? "left"
                             : "center",
-                          marginRight: ["lg", "xl"].includes(screenClass)
+                          marginRight: ["md","lg", "xl"].includes(screenClass)
                             ? "0.8rem"
                             : "0"
                         }}
@@ -152,10 +152,10 @@ class Form extends Component {
                     render={screenClass => (
                       <label
                         style={{
-                          textAlign: ["lg", "xl"].includes(screenClass)
+                          textAlign: ["md","lg", "xl"].includes(screenClass)
                             ? "left"
                             : "center",
-                          marginRight: ["lg", "xl"].includes(screenClass)
+                          marginRight: ["md","lg", "xl"].includes(screenClass)
                             ? "0.8rem"
                             : "0"
                         }}
@@ -181,10 +181,10 @@ class Form extends Component {
               render={screenClass => (
                 <label
                   style={{
-                    textAlign: ["lg", "xl"].includes(screenClass)
+                    textAlign: ["md","lg", "xl"].includes(screenClass)
                       ? "left"
                       : "center",
-                    marginRight: ["lg", "xl"].includes(screenClass)
+                    marginRight: ["md","lg", "xl"].includes(screenClass)
                       ? "0.8rem"
                       : "0"
                   }}
@@ -211,7 +211,7 @@ class Form extends Component {
               value="Wyślij"
               onClick={this.handleSubmit}
               style={{
-                alignSelf: ["lg", "xl"].includes(screenClass)
+                alignSelf: ["md","lg", "xl"].includes(screenClass)
                   ? "flex-start"
                   : "center"
               }}
