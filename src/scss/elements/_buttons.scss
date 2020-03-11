@@ -10,6 +10,8 @@ button {
 }
 
 button.sprawdz-trening {
+    width: 180px;
+    height: 30px;
     background-color: $btnSprawdzTreningBackground;
     border: 1px solid $btnSprawdzTreningBorder;
     box-shadow: 0 5px 12px 0 $btnSprawdzTreningShadow;
@@ -18,6 +20,8 @@ button.sprawdz-trening {
 }
 
 button.sprawdz-trening:hover {
+    width: 180px;
+    height: 30px;
     border-color: $btnSprawdzTreningBorderHover;
     background-color: $btnSprawdzTreningBackgroundHover;
     color: $btnSprawdzTreningTextHover;
@@ -26,7 +30,8 @@ button.sprawdz-trening:hover {
 
 /* dlaczego cień jest czarny na buttonie żółtym?! */
 button.umow-sie {
-    width: 241px;
+    width: 180px;
+    height: 30px;
     background-color: $btnUmowSieBackground;
     box-shadow: 0 10px 12px 0 $btnUmowSieShadow;
     border-radius: 48px;
@@ -80,6 +85,67 @@ button.wyslij-wiadomosc{
 }
 
 
+button.cross{
+    display: block;
+    width: 18.4px;
+    height: 18.4px;
+    background-color: $backgroundColor;
+    border:none;
+    box-sizing: border-box;
+    color: $hamburgermenu;
+    position: relative;
+    cursor: pointer;
 
+    span{
+        display: block;
+        width: 2px;
+        height: 22px;
+        background-color: $hamburgermenu;
+        position:absolute;
+
+        &:first-of-type{
+            transform: rotate(45deg);
+        }
+        &:last-of-type{
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+button.hamburger {
+    display: block;
+    display: inline-block;
+        border: none;
+        height: 20px;
+        width: 22px;
+        background-color: $backgroundColor;
+        position: relative;
+
+        .hamburger__inner {
+            width: 22px;
+            height: 2px;
+            background-color: $hamburgermenu ;
+            display: block;
+
+            &::after{
+                content: "";
+                position: absolute;
+                top: 1px;
+                width: 22px;
+                height: 2px;
+                background-color: $hamburgermenu ;
+                display: block;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: 1px;
+                width: 22px;
+                height: 2px;
+                background-color: $hamburgermenu;
+                display: block;
+            }
+        }
+}
 
 
