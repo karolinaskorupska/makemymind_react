@@ -1,136 +1,90 @@
+footer {
+  background-color: $footerBackground;
+  font-family: $font;
+  font-weight: 400;
+  color: $footerTextColor;
+  line-height: 2.5rem;
+  margin: 0;
 
-
-footer{
-    
-    background-color: $footerBackground;
-    font-family: $font;
-    font-weight: 400;
-    color: $footerTextColor;
-    line-height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  div.footer {
     align-items: center;
-    font-size: 14px;
-    width: 100vw;
-
-
-
-    div.footer{
+    .left,
+    .middle,
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+      div {
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 25px;
 
-        @media(max-width:600px){
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        @media(max-width:320px){
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        .tel {
+          margin-top: 0.1rem;
+          display: inline-block;
+          img {
+            margin-right: 1rem;
 
-
-        div{
-            width: 261px;
-            margin-top: 54px;
-
-            @media(max-width: 800px){
-                width: 220px;
+            a {
+              text-decoration: none;
             }
-            @media(max-width:600px){
-                width: 261px;
-            }
+          }
         }
-            .left {
-                margin-right: 207px;
-                @media(max-width:1024px){
-                    margin-right: 65px;
-                }
-                @media(max-width:800px){
-                    margin-right: 20px;
-                }
-                @media(max-width:320px){
-                    margin-right: 0;
-                }
-
-            
-                
-                .tel {
-                    margin-top: 3px;
-                    img{
-                        margin-right: 15px;
-
-                        a{
-                            text-decoration: none;
-                            
-                        }
-                    }
-                }
-                .mail {
-                    margin-top: 9px;
-                    img {
-                        margin-right: 15px;
-                    }
-                }
-                .icons {
-                    margin-top: 30px;
-
-                    img {
-                        margin-right: 13px;
-                    }
-                }
+        .mail {
+          margin-top: 0.9rem;
+          display: inline-block;
+          img {
+            margin-right: 1rem;
+          }
         }
-        .middle {
-            margin-right: 123px;
-            line-height: 30px;
-            @media(max-width: 1024px){
-                margin-right: 38px;
-            }
-            @media(max-width: 320px){
-                margin-right: 0;
-            }
-            
-        }
-        .right{
+        .icons {
+          margin-top: 2rem;
+          display: inline-block;
 
-            nav.nav-small {
-                text-align: left;
-                margin-top: 15px;
-
-                table {
-                    color: $backgroundColor;
-                    text-transform: uppercase;
-                    font-family: $font;
-                    font-weight: 500;
-                    font-size: 14px;
-                    display: inline-block;
-                    
-                    td {
-                        width: 151px;
-
-                        a{
-                            text-decoration: none;
-                            color:white;
-                        }
-                    }
-            }
-
+          img {
+            margin-right: 1rem;
+          }
         }
 
-     }
-    
+        .nav-small {
+          text-align: left;
+
+          table {
+            color: $backgroundColor;
+            text-transform: uppercase;
+            font-family: $font;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 25px;
+            display: inline-block;
+            margin-top: 1rem;
+
+            tbody {
+              tr {
+                td {
+                  a {
+                    text-decoration: none;
+                    color: $footerTextColor;
+                    margin-right: 2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 
-.copyrights {
+  .copyrights {
     text-align: center;
     margin-bottom: 26px;
-    margin-top: 69px;
-    font-size: 14px;
+    // margin-top: 69px;
+    // font-size: 14px;
+  }
 }
-
-}
-

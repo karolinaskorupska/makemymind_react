@@ -1,20 +1,50 @@
-import React from 'react';
+import React from "react";
+import {
+  Container,
+  Row,
+  Col,
+  ScreenClassRender
+} from "react-grid-system";
+import Training from "../components/trainings/Training";
 
-import Training from '../components/trainings/Training';
-
-
-const Trainings=()=>{
-
-    return(
-        <main>
-            <div className="container trainings">
-                <h2>Treningi z kompetencji miękkich</h2>
-                    <div className="big-box trainings">
-                        <Training />
-                    </div>
-            </div>
-        </main>
-    )
-}
+const Trainings = () => {
+  return (
+    <main>
+        <Container>
+      <div className="container trainings">
+        
+          <Row>
+            <Col>
+              <ScreenClassRender
+                render={screenClass => (
+                  <h2
+                    style={{
+                      fontSize: ["lg", "xl"].includes(screenClass)
+                        ? "39px"
+                        : "20px",
+                      lineHeight: ["lg", "xl"].includes(screenClass)
+                        ? "45px"
+                        : "25px"
+                    }}
+                  >
+                    Treningi z kompetencji miękkich
+                  </h2>
+                )}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="big-box trainings">
+                <Training />
+              </div>
+            </Col>
+          </Row>
+       
+      </div>
+      </Container>
+    </main>
+  );
+};
 
 export default Trainings;

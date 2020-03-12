@@ -3,55 +3,37 @@
 main .trainings {
     display: flex;
     flex-direction: column;
-    
-    
-    
     h2 {
-        font-family: $font;
-        font-size: 39px;
+        font-family: $font; 
         columns: $h2TextColor; 
-        line-height: 45px;
         text-align: center;
-        margin-top: 100px;
-        margin-bottom: 70px;
+        margin-top: 7rem;
+        margin-bottom: 4rem;
         font-weight: 800;
-
-        @media(max-width:600px){
-            font-size:20px;
-            line-height: 25px;
-            width: 257px;
-            align-self: center;
-            
-        }
     }
 
     .big-box {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         align-items: center;
-        margin-bottom: 100px;
-
-        @media(max-width:600px){
-            flex-direction: column;
-        }
-
+        margin-bottom: 6rem;
 
         .small-box{
             display: flex;
             flex-direction: column;
-            width: 280px;
-            @media(max-width:600px){
-                margin-bottom:45px ;
-            }
-            
-            
+            width: 18rem;
+            margin-bottom: 2rem;
+
             .photo-box{
-                height: 157px;
-                // background-image: url("../../assets/trainings/DSC0166.png");
-                background-color: gray;
-                background-size: cover;
+            
+                height: 11rem;
                 z-index: 0;
+                img{
+                    overflow: hidden;
+                    width: 100%;
+                }
             }
             .text-box{
                 z-index: 1;
@@ -62,7 +44,6 @@ main .trainings {
                 align-items: flex-start;
                 justify-content: center;
                 box-sizing: border-box;
-                
                 box-shadow:0 5px 12px 0 $borderColor; 
                 border-radius: 6px;
 
@@ -70,23 +51,23 @@ main .trainings {
                     font-size: 20px;
                     color: $h4TextColor;
                     line-height: 45px;
-                    padding-left: 23px;
+                    padding-left: 1rem;
                 }
                 span{
                     color: $trainingsTextPrice;
                     font-size: 24px;
                     border-bottom: 3px solid $spanBorderBottom;
-                    padding: 7px 0;
+                    padding: 0.5rem 0;
                     width:140px ;
-                    padding-left: 23px;
+                    padding-left: 1.5rem;
                 }
 
                 .p-box{
                     font-size: 14px;
                     line-height: 25px;
                     color: $pTextColor;
-                    padding:5px 5px;
-                    padding-left: 23px;
+                    padding:0.3rem 0.3rem;
+                    padding-left: 1rem;
                 }
                 .icon-box{
                     display: flex;
@@ -100,23 +81,23 @@ main .trainings {
                 }
                 .watch, .location{
                     
-                    height: 55px;
+                    height: 3.5rem;
                     display:flex;
                     flex-direction: row;
-                    margin:5px 10px;
+                    margin:0.3rem 0.8rem;
                     align-items: center;
 
                     img{
-                        margin-right: 5px;
+                        margin-right: 0.3rem;
                     }
                     .txt{
                         
-                        width:94px;
+                        width:6rem;
                     }
                 }
 
                 button.zapisz-sie{
-                   margin-left: 37px; 
+                   margin-left: 2.5rem; 
                    
                 }
                 
@@ -125,7 +106,7 @@ main .trainings {
 
             a{
                 display: block;
-                margin:11px 78px;
+                margin:0.8rem 5rem;
                 text-align: center;
                 text-decoration: none;
                 color: $navUlLiTextColor;
