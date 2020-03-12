@@ -14,12 +14,12 @@ const VisibleHamburgerMenu = ({
   return (
     <Container fluid>
       <Visible lg md sm xs>
-        <Row justify="around">
+        <Row justify="between">
           <header>
             <Col xl={2} lg={3} md={4} sm={5} xs={7}>
               <LogoHeader handleHamburgerMenu={handleHamburgerMenu} />
             </Col>
-            <Col lg={7} md={6} sm={5} xs={2}>
+            <Col lg={7} md={7} sm={5} xs={4}>
               {""}
             </Col>
             <Col lg={1} md={1} sm={1} xs={1}>
