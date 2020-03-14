@@ -7,19 +7,19 @@ import LogoHeader from "./LogoHeader";
 import HamburgerButton from "./HamburgerButton";
 import { Container, Row, Col, Visible } from "react-grid-system";
 
-const VisibleHeader = ({ handleHamburgerMenu }) => {
+const VisibleHeader = ({ handleHamburgerMenu, handleHamburgerMenuClose }) => {
   return (
     <Container fluid>
       <Row justify="between">
         <header>
           <Visible xl lg md sm xs>
             <Col xl={2} lg={3} md={4} sm={5} xs={7}>
-              <LogoHeader handleHamburgerMenu={handleHamburgerMenu} />
+              <LogoHeader handleHamburgerMenuClose={handleHamburgerMenuClose} />
             </Col>
           </Visible>
           <Visible xl>
             <Col xl={6}>
-              <Navigation handleHamburgerMenu={handleHamburgerMenu} />
+              <Navigation handleHamburgerMenuClose={handleHamburgerMenuClose} />
             </Col>
           </Visible>
           <Visible md sm xs>

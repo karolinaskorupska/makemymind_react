@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const HamburgerMenuIcons = () => {
   return (
     <div className="hamburger-menu-icons">
-      <Link to="https://www.linkedin.com/company/make-my-mind/" target="_blank">
+      <Link to="www.linkedin.com/company/make-my-mind/" target="_blank">
         <img src="assets/Linked_Icon_dark.svg" alt="LinkedIn"></img>
       </Link>
       <Link to="https://www.facebook.com/makemymindpl/" target="_blank">

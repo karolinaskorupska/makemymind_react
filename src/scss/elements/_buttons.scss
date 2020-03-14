@@ -112,40 +112,43 @@ button.cross{
     }
 }
 
-button.hamburger {
-    display: block;
-    display: inline-block;
-        border: none;
-        height: 20px;
-        width: 22px;
-        background-color: $backgroundColor;
-        position: relative;
-
-        .hamburger__inner {
+    button.hamburger {
+        display: block;
+        display: inline-block;
+            border: none;
+            height: 20px;
             width: 22px;
-            height: 2px;
-            background-color: $hamburgermenu ;
-            display: block;
-
-            &::after{
-                content: "";
-                position: absolute;
-                top: 1px;
+            background-color: $backgroundColor;
+            position: relative;
+    
+            .hamburger__inner {
                 width: 22px;
                 height: 2px;
                 background-color: $hamburgermenu ;
                 display: block;
+    
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 1px;
+                    width: 22px;
+                    height: 2px;
+                    background-color: $hamburgermenu ;
+                    display: block;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 1px;
+                    width: 22px;
+                    height: 2px;
+                    background-color: $hamburgermenu;
+                    display: block;
+                }
             }
-            &::before{
-                content: "";
-                position: absolute;
-                bottom: 1px;
-                width: 22px;
-                height: 2px;
-                background-color: $hamburgermenu;
-                display: block;
-            }
-        }
-}
+    }
+    
+
+
 
 
