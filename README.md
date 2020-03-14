@@ -12,4 +12,11 @@ for demo:
 
 made with SCSS, styled Components and FontAwesome Icons for React.
 
--in progress
+
+
+How to open project?
+
+-clone repo,
+-install npm,
+-run in locallhost 3000,
+-enjoy.
