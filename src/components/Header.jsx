@@ -6,6 +6,12 @@ import VisibleHeader from "./header/VisibleHeader";
 
 import VisibleHamburgerMenu from "./header/VisibleHamburgerMenu";
 
+
+//
+import {TweenMax} from 'gsap';
+
+
+
 class Header extends Component {
   state = {
     hamburgerIsOpen: false
@@ -24,8 +30,10 @@ class Header extends Component {
   };
 
   render() {
+    
+
     return (
-      <>
+      <div >
         {!this.state.hamburgerIsOpen ? (
           <VisibleHeader
             handleHamburgerMenu={this.handleHamburgerMenu}
@@ -37,7 +45,7 @@ class Header extends Component {
             handleHamburgerMenuClose={this.handleHamburgerMenuClose}
           />
         )}
-      </>
+      </div>
     );
   }
 }

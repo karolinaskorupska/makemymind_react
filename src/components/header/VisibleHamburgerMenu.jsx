@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, useRef, useEffect} from "react";
 
 import LogoHeader from "./LogoHeader";
 import { Container, Row, Col, Visible } from "react-grid-system";
@@ -7,15 +7,27 @@ import Navigation from "./Navigation";
 import HeaderButtons from "./HeaderButtons";
 import HamburgerMenuIcons from "./HamburgerMenuIcons";
 
+
+import {TweenMax} from 'gsap';
+
+
 const VisibleHamburgerMenu = ({
   handleHamburgerMenu,
   handleHamburgerMenuClose
 }) => {
+
+  let app = useRef(null);
+
+  useEffect(()=>{
+    TweenMax.to(app, 0, {visibility:'visible'});
+    console.log(app)
+  })
+
   return (
-    <Container fluid>
+    <Container fluid >
       <Visible lg md sm xs>
         <Row justify="between">
-          <header>
+          <header ref={el =>app =el}>
             <Col xl={2} lg={3} md={4} sm={5} xs={7}>
               <LogoHeader handleHamburgerMenu={handleHamburgerMenu} />
             </Col>
