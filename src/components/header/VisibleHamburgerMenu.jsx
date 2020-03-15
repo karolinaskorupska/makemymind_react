@@ -8,7 +8,7 @@ import HeaderButtons from "./HeaderButtons";
 import HamburgerMenuIcons from "./HamburgerMenuIcons";
 
 
-import {TweenMax} from 'gsap';
+import gsap from 'gsap';
 
 
 const VisibleHamburgerMenu = ({
@@ -16,18 +16,30 @@ const VisibleHamburgerMenu = ({
   handleHamburgerMenuClose
 }) => {
 
-  let app = useRef(null);
+  let wrapper = useRef(null);
 
   useEffect(()=>{
-    TweenMax.to(app, 0, {visibility:'visible'});
-    console.log(app)
+    const hamburgerNav = wrapper.current;
+
+    
+    console.log(hamburgerNav);
+
+    gsap.set(hamburgerNav, {autoAlpha:0});
+
+    const tl = gsap.timeline({defaults:{ease:'power3.inOut'}});
+
+    tl.fromTo(hamburgerNav, {y:"-=100"}, {duration:1, y:"+=100", autoAlpha:1})
+
+    
+    
   })
 
   return (
+    
     <Container fluid >
       <Visible lg md sm xs>
         <Row justify="between">
-          <header ref={el =>app =el}>
+          <header >
             <Col xl={2} lg={3} md={4} sm={5} xs={7}>
               <LogoHeader handleHamburgerMenu={handleHamburgerMenu} />
             </Col>
@@ -40,7 +52,7 @@ const VisibleHamburgerMenu = ({
           </header>
         </Row>
         <Row>
-          <div className="hamburger-nav">
+          <div className="hamburger-nav" id="hamburger-nav" ref={wrapper}>
             <div className="inside-box">
             <Col>
               <Navigation handleHamburgerMenu={handleHamburgerMenu} />
@@ -52,6 +64,7 @@ const VisibleHamburgerMenu = ({
         </Row>
       </Visible>
     </Container>
+    
   );
 };
 
