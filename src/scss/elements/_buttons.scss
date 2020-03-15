@@ -85,70 +85,85 @@ button.wyslij-wiadomosc{
 }
 
 
-button.cross{
-    display: block;
-    width: 18.4px;
-    height: 18.4px;
-    background-color: $backgroundColor;
-    border:none;
-    box-sizing: border-box;
-    color: $hamburgermenu;
-    position: relative;
-    cursor: pointer;
 
-    span{
+
+    button.hamburger{
+        width: 3rem;
+        height: 3rem;
         display: block;
-        width: 2px;
-        height: 22px;
-        background-color: $hamburgermenu;
-        position:absolute;
-
-        &:first-of-type{
-            transform: rotate(45deg);
-        }
-        &:last-of-type{
-            transform: rotate(-45deg);
-        }
-    }
-}
-
-    button.hamburger {
-        display: block;
-        display: inline-block;
-            border: none;
-            height: 20px;
-            width: 22px;
-            background-color: $backgroundColor;
-            position: relative;
-    
-            .hamburger__inner {
+        background-color: $backgroundColor;
+        border: none;
+        margin-right: 1rem;
+        .hamburger {
+            display: inline-block;
+                height: 20px;
                 width: 22px;
-                height: 2px;
-                background-color: $hamburgermenu ;
-                display: block;
-    
-                &::after{
-                    content: "";
-                    position: absolute;
-                    top: 1px;
+                background-color: $backgroundColor;
+                position: relative;
+                
+        
+                .hamburger__inner {
                     width: 22px;
                     height: 2px;
                     background-color: $hamburgermenu ;
-                    display: block;
+                    display:block;
+        
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 8px;
+                        width: 22px;
+                        height: 2px;
+                        background-color: $hamburgermenu ;
+                        display: block;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        bottom: 1px;
+                        width: 22px;
+                        height: 2px;
+                        background-color: $hamburgermenu;
+                        display: block;
+                    }
                 }
-                &::before{
-                    content: "";
-                    position: absolute;
-                    bottom: 1px;
-                    width: 22px;
-                    height: 2px;
-                    background-color: $hamburgermenu;
-                    display: block;
-                }
-            }
+        }
     }
     
 
-
+button.cross{
+        width: 3rem;
+        height: 3rem;
+        display: block;
+        background-color: $backgroundColor;
+        border: none;
+        margin-right: 1rem;
+    .cross{
+        display: block;
+        width: 18.4px;
+        height: 18.4px;
+        background-color: $backgroundColor;
+        border:none;
+        box-sizing: border-box;
+        color: $hamburgermenu;
+        position: relative;
+        cursor: pointer;
+    
+        span{
+            display: block;
+            width: 2px;
+            height: 22px;
+            background-color: $hamburgermenu;
+            position:absolute;
+    
+            &:first-of-type{
+                transform: rotate(45deg);
+            }
+            &:last-of-type{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
 
 
