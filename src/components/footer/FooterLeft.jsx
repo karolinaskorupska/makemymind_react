@@ -21,34 +21,34 @@ const FooterLeft =()=>{
             kontakt@makemymind.pl
           </div>
           <div className="icons">
-            <Link
-              to="https://www.linkedin.com/company/make-my-mind/"
+            <a
+              href="https://www.linkedin.com/company/make-my-mind/"
               target="_blank"
             >
               <img src="assets/Linked_Icon.svg" alt="linkedin"></img>
-            </Link>
-            <Link
-              to="https://www.facebook.com/makemymindpl/"
+            </a>
+            <a
+              href="https://www.facebook.com/makemymindpl/"
               target="_blank"
             >
               <img src="assets/Facebook_Icon.svg" alt="Facebook"></img>
-            </Link>
-            <Link to="#">
+            </a>
+            <a href="#">
               <img
                 src="assets/Twitter_Icon.svg"
                 alt="Twitter"
                 target="_blank"
               ></img>
-            </Link>
-            <Link
-              to="https://www.instagram.com/make_my_mind/"
+            </a>
+            <a
+              href="https://www.instagram.com/make_my_mind/"
               target="_blank"
             >
               <img
                 src="assets/Instagram_Icon.svg"
                 alt="Instagram"
               ></img>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

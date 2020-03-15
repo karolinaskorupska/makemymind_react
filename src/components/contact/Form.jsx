@@ -107,6 +107,46 @@ class Form extends Component {
 
     return (
       <>
+      {isValidated && (
+          <div className="alert green ok">
+            <FontAwesomeIcon
+              icon={["fas", "check-circle"]}
+              className="fas fa-check-circle"
+              fixedWidth
+            ></FontAwesomeIcon>
+            Dziękujemy!
+          </div>
+        )}
+        {errorName && (
+          <div className=" alert red error">
+            <FontAwesomeIcon
+              icon={["fas", "times-circle"]}
+              className="fas fa-times-circle"
+              fixedWidth
+            ></FontAwesomeIcon>
+            {errorName}
+          </div>
+        )}
+        {errorEmail && (
+          <div className="alert red error">
+            <FontAwesomeIcon
+              icon={["fas", "times-circle"]}
+              className="fas fa-times-circle"
+              fixedWidth
+            ></FontAwesomeIcon>
+            {errorEmail}
+          </div>
+        )}
+        {errorMessage && (
+          <div className="alert red error">
+            <FontAwesomeIcon
+              icon={["fas", "times-circle"]}
+              className="fas fa-times-circle"
+              fixedWidth
+            ></FontAwesomeIcon>
+            {errorMessage}
+          </div>
+        )}
         <form>
           <ScreenClassRender
             render={screenClass => (
@@ -221,46 +261,7 @@ class Form extends Component {
           )}
         />
 
-        {isValidated && (
-          <div className="alert green ok">
-            <FontAwesomeIcon
-              icon={["fas", "check-circle"]}
-              className="fas fa-check-circle"
-              fixedWidth
-            ></FontAwesomeIcon>
-            Dziękujemy!
-          </div>
-        )}
-        {errorName && (
-          <div className=" alert red error">
-            <FontAwesomeIcon
-              icon={["fas", "times-circle"]}
-              className="fas fa-times-circle"
-              fixedWidth
-            ></FontAwesomeIcon>
-            {errorName}
-          </div>
-        )}
-        {errorEmail && (
-          <div className="alert red error">
-            <FontAwesomeIcon
-              icon={["fas", "times-circle"]}
-              className="fas fa-times-circle"
-              fixedWidth
-            ></FontAwesomeIcon>
-            {errorEmail}
-          </div>
-        )}
-        {errorMessage && (
-          <div className="alert red error">
-            <FontAwesomeIcon
-              icon={["fas", "times-circle"]}
-              className="fas fa-times-circle"
-              fixedWidth
-            ></FontAwesomeIcon>
-            {errorMessage}
-          </div>
-        )}
+        
       </>
     );
   }

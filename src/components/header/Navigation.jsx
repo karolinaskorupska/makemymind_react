@@ -8,7 +8,7 @@ const Navigation = ({ handleHamburgerMenu })=>{
         {" "}
         <ul>
           <li>
-            <NavLink onClick={handleHamburgerMenu} exact to="index" title="o nas" target="_self">
+            <NavLink onClick={handleHamburgerMenu} exact to="/index" title="o nas" target="_self">
               o nas
             </NavLink>
           </li>
@@ -17,7 +17,7 @@ const Navigation = ({ handleHamburgerMenu })=>{
               exact
               onClick={handleHamburgerMenu}
               to="http"
-              title="o projekcie"
+              title="/o projekcie"
               target="_self"
             >
               o projekcie
@@ -27,7 +27,7 @@ const Navigation = ({ handleHamburgerMenu })=>{
             <NavLink
               exact
               onClick={handleHamburgerMenu}
-              to="trainings"
+              to="/trainings"
               title="uslugi"
               target="_self"
             >
@@ -38,7 +38,7 @@ const Navigation = ({ handleHamburgerMenu })=>{
             <NavLink
               exact
               onClick={handleHamburgerMenu}
-              to="trainers"
+              to="/trainers"
               title="trenerzy"
               target="_self"
             >
@@ -49,7 +49,7 @@ const Navigation = ({ handleHamburgerMenu })=>{
             <NavLink
               exact
               onClick={handleHamburgerMenu}
-              to="contact"
+              to="/contact"
               title="kontakt"
               target="_self"
             >

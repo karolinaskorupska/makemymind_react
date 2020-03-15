@@ -3,7 +3,7 @@ import React from "react";
 const HamburgerMenuIcons = () => {
   return (
     <div className="hamburger-menu-icons">
-      <a href="www.aedin.com/company/make-my-mind/" target="_blank">
+      <a href="https://www.linkedin.com/company/make-my-mind/" target="_blank">
         <img src="assets/Linked_Icon_dark.svg" alt="LinkedIn"></img>
       </a>
       <a href="https://www.facebook.com/makemymindpl/" target="_blank">
