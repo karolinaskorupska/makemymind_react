@@ -43,6 +43,7 @@ class Header extends Component {
           <VisibleHamburgerMenu
             handleHamburgerMenu={this.handleHamburgerMenu}
             handleHamburgerMenuClose={this.handleHamburgerMenuClose}
+            hamburgerIsOpen={this.state.hamburgerIsOpen}
           />
         )}
       </div>

@@ -13,24 +13,25 @@ import gsap from 'gsap';
 
 const VisibleHamburgerMenu = ({
   handleHamburgerMenu,
-  handleHamburgerMenuClose
+  handleHamburgerMenuClose, 
+  hamburgerIsOpen
 }) => {
 
   let wrapper = useRef(null);
 
   useEffect(()=>{
     const hamburgerNav = wrapper.current;
-
-    
     console.log(hamburgerNav);
+
+    // const {hamburgerIsOpen} = hamburgerIsOpen;
+    console.log(hamburgerIsOpen)
 
     gsap.set(hamburgerNav, {autoAlpha:0});
 
     const tl = gsap.timeline({defaults:{ease:'power3.inOut'}});
 
     tl.fromTo(hamburgerNav, {y:"-=100"}, {duration:1, y:"+=100", autoAlpha:1})
-
-    
+ 
     
   })
 
