@@ -6,7 +6,8 @@ All components works with React-Grid-System.
 - HEADER has custom made hamburger menu,
 - TRAINERS and TRAININGS elements are rendering from dataBase imformation,
 - FORM is controlled and sends validated information TO dataBase,
-- TRAINERS in Trainer Description in width: 320px has 2 x paragraff hhidden/show on the button.
+- TRAINERS in Trainer Description in width: 320px has 2 x paragraff hhidden/show on the button,
+- INDEX- image Grow - animation made with GSAP.
 
 for demo:
 
