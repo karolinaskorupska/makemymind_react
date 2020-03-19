@@ -1,7 +1,35 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import { Container, Row, Col, ScreenClassRender } from "react-grid-system";
+import Grow from '../images/Grow';
+import gsap from 'gsap';
 
 const Welcome = () => {
+
+  let wrapper = useRef(null);
+
+  useEffect(()=>{
+    const [elements]= wrapper.current.children;
+
+    const flower = elements.getElementById('flower');
+    const stem = elements.getElementById('stem');
+    const leavesElement = elements.getElementById('leaves');
+    const leavesChildren = [...leavesElement.children];
+    const bulb = elements.getElementById('bulb');
+    const lady = elements.getElementById('lady');
+    
+    gsap.set([...leavesChildren, stem, bulb, lady], {autoAlpha:0});
+    gsap.set(bulb, {transformOrigin:'50% 100%'});
+
+
+    const tl = gsap.timeline({ defaults:{ease:'power3.inOut'}});
+
+    tl.fromTo(lady, {x:'+=100'}, {duration:1.5, x: '-=100', autoAlpha:1})
+      .fromTo(bulb, {opacity:0, scale:0.5}, {duration:0.8, autoAlpha:1, opacity:1, scale:1})
+      .fromTo(stem, {autoAlpha:0, scale:0.4, transformOrigin:'50% 100%'},{duration:2, autoAlpha:1,scale:1})
+      .to(leavesChildren, {duration:2, autoAlpha:1,scale:1, stagger:0.3});
+     
+      
+  })
   return (
     <section className="welcome">
       <Container>
@@ -50,12 +78,8 @@ const Welcome = () => {
             </div>
           </Col>
           <Col>
-            <div className="img">
-              <img
-                className="grow"
-                src="assets/illustration_grow.svg"
-                alt="grow!"
-              ></img>
+            <div className="img" ref={wrapper}>
+              <Grow />
             </div>
           </Col>
         </Row>

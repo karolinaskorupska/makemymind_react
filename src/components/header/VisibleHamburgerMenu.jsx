@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, useRef, useEffect} from "react";
 
 import LogoHeader from "./LogoHeader";
 import { Container, Row, Col, Visible } from "react-grid-system";
@@ -7,15 +7,40 @@ import Navigation from "./Navigation";
 import HeaderButtons from "./HeaderButtons";
 import HamburgerMenuIcons from "./HamburgerMenuIcons";
 
+
+import gsap from 'gsap';
+
+
 const VisibleHamburgerMenu = ({
   handleHamburgerMenu,
-  handleHamburgerMenuClose
+  handleHamburgerMenuClose, 
+  hamburgerIsOpen
 }) => {
+
+  let wrapper = useRef(null);
+
+  useEffect(()=>{
+    const hamburgerNav = wrapper.current;
+    console.log(hamburgerNav);
+
+    // const {hamburgerIsOpen} = hamburgerIsOpen;
+    console.log(hamburgerIsOpen)
+
+    gsap.set(hamburgerNav, {autoAlpha:0});
+
+    const tl = gsap.timeline({defaults:{ease:'power3.inOut'}});
+
+    tl.fromTo(hamburgerNav, {y:"-=100"}, {duration:1, y:"+=100", autoAlpha:1})
+ 
+    
+  })
+
   return (
-    <Container fluid>
+    
+    <Container fluid >
       <Visible lg md sm xs>
         <Row justify="between">
-          <header>
+          <header >
             <Col xl={2} lg={3} md={4} sm={5} xs={7}>
               <LogoHeader handleHamburgerMenu={handleHamburgerMenu} />
             </Col>
@@ -28,7 +53,7 @@ const VisibleHamburgerMenu = ({
           </header>
         </Row>
         <Row>
-          <div className="hamburger-nav">
+          <div className="hamburger-nav" id="hamburger-nav" ref={wrapper}>
             <div className="inside-box">
             <Col>
               <Navigation handleHamburgerMenu={handleHamburgerMenu} />
@@ -40,6 +65,7 @@ const VisibleHamburgerMenu = ({
         </Row>
       </Visible>
     </Container>
+    
   );
 };
 
