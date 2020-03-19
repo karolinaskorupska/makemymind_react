@@ -11,10 +11,15 @@ const Welcome = () => {
     const [elements]= wrapper.current.children;
 
     const flower = elements.getElementById('flower');
+    const stem = elements.getElementById('stem');
+    const leavesElement = elements.getElementById('leaves');
+    const leavesChildren = leavesElement.children;
+    // const leavesArray = leavesChildren.prototype.forEach(leaf => [].push(leaf));
+    // console.log(leavesArray);
     const bulb = elements.getElementById('bulb');
     const lady = elements.getElementById('lady');
     
-    gsap.set([flower, bulb, lady], {autoAlpha:0});
+    gsap.set([leavesChildren, stem, bulb, lady], {autoAlpha:0});
     gsap.set(bulb, {transformOrigin:'50% 100%'});
 
 
@@ -22,8 +27,12 @@ const Welcome = () => {
 
     tl.fromTo(lady, {x:'+=100'}, {duration:1.5, x: '-=100', autoAlpha:1})
       .fromTo(bulb, {opacity:0, scale:0.5}, {duration:0.8, autoAlpha:1, opacity:1, scale:1})
-      .fromTo(flower, {autoAlpha:0, scale:0.4, transformOrigin:'50% 100%'},{duration:2, autoAlpha:1,scale:1})
-
+      .fromTo(stem, {autoAlpha:0, scale:0.4, transformOrigin:'50% 100%'},{duration:2, autoAlpha:1,scale:1})
+      .fromTo(leavesChildren, {autoAlpha:0, scale:0.4, transformOrigin:'50% 100%'},{duration:2, autoAlpha:1,scale:1});;
+      // .to(leavesChildren.prototype.forEach( (element, index) => {
+      //   tl.to( this.refs[element.id], 1, {autoAlpha:1}, 0.1 * index);
+      // }));
+      
   })
   return (
     <section className="welcome">
